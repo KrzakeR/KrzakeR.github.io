@@ -7,209 +7,105 @@
 	<title>Krzaczasta Dolina</title>
 	
 	<meta name="description" content="Krzaczasta strona" />
-	<meta name="keywords" content="" />
-	
-	<link rel="stylesheet" href="style.css" type="text/css" />
+	<meta name="keywords" content="krzaker, krzaczasta, dolina, krzaczaste, archiwium, kushakeru" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Lato|Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	
 	<script src="timer.js"></script>
-		
+    	
 </head>
 
+
 <body onload="odliczanie();">
-	
+
 	<div id="maincontainer">
         
-        <div id="logobg">
-            <div id="logo"><a href="" class="tilelinkhtml5">Krzaczasta Dolina</a></div>
+        <!-- LOGO -->
+
+        <header>
+            <div id="logo"><a href="" class="homelink">Krzaczasta Dolina</a></div>
             <div id="zegar">12:00:00</div>
 			<div style="clear: both;"></div>
-        </div>
+        </header>
 
-        <div id="toppanel">
-            
-            <!-- INFO / UPDATE / OSTATNIE WPISY -->
+        <!-- GŁÓWNA CZĘŚĆ STRONY -->
 
-            <div id="information">
+        <section id="middlepanel">
             
-                <!-- TYTUŁ INFORMACJI -->
+            <!-- TYTUŁY -->
+
+            <div class="title info">INFORMACJE</div>
+            <div class="title shortcuts">SKRÓTY</div>
+            
+            <div style="clear: both;"></div>
+
+            <!-- POJEMNIK NA SEKCJE -->
+            
+            <section class="topbox">
                 
-                <div class="infotitle">INFORMACJE</div>
+                <!-- INFORMACJE -->
 
-            <div class="information">
-            
-                <!-- INFORMACJE HERE --> 
-                
-                Witaj w Krzaczastej Dolinie!<br /><br />
-                Być może kiedyś powstanie tu strona internetowa.<br /><br />
-            
-            </div>
-            </div>
+                <article class="halfbox infobox">
+                    Witaj na Krzaczastej Dolinie. <br /><br /> 
+                    Znajdziesz tu zbiór rzeczy, którymi się zajmuję w wolnym czasie.
+                    Aktualnie za dużo tu nie ma, ale może kiedyś coś tu będzie.
+                    Wszelkie rzeczy związane z stroną (np. kod źródłowy) Znajdziesz
+                    na Githubie, klikając na skrót obok. <br /><br /> 
+                    PS. Linki do Archiwum i Szablonów jeszcze nie działają :v
+                </article>
 
-            <div id="update">
+                <!-- SKRÓTY -->
 
-                <!-- TYTUŁ UPDATE -->
-
-                <div class="updatetitle">AKTUALIZACJE</div>
-
-            <div class="updateinformation">
-
-                <!-- AKTUALIZACJE HERE -->
-
-                Aktualny postęp prac:<br /><br />
-                - Strona główna:<br />
-                Całość została zmieniona.<br /><br />
-                - Przedmioty:<br />
-                Jak nie było tak nie ma.<br /><br />
-                - Wygląd:<br />
-                Zmieniany na bieżąco.<br /><br />
-                - Łatwe umieszczanie tekstu:<br />
-                Nie sprawdzałem jeszcze jak.<br /><br />
-                
-                Szczegóły na Githubie.<br /><br />
-                Ostatni update: 23:49 19.09.2019
-
-            </div>
-            </div>
-
-            <div id="recentlyadded">
-
-                <!-- TYTUŁ OSTATNICH WPISÓW -->
-
-                <div class="recenttitle">OSTATNIE WPISY</div>
-
-            <div class="recentlyadded">
-
-                <!-- OSTATNIE WPISY HERE-->
-
-                <div class="recenttile1">
-                    BRAK                    
-                </div>
-
-                <div class="recenttile2">
-                    BRAK
-                </div>
-
-                <div class="recenttile1">
-                    BRAK
-                </div>
-
-            </div>
-            </div>
-
-        </div>
-
-        <div style="clear:both;"></div>
-        
-        <div id="borderpanel">
-            
-            <!-- BORDER PANEL -->
-            
-            <div id="topborder"></div> <!-- BORDER -->
-                
-                <!-- DOLNY TYTUŁ -->
-
-                <div id="bordertitle">Krzaczaste Archiwum</div>
-            
-            <div id="topborder"></div> <!-- BORDER -->
-                
-        </div>
-
-        <div style="clear:both;"></div>
-
-        
-        <div id="middlepanel">
-
-            <!-- PRZEDMIOTY / LINKI --> 
-            
-            <!--
-
-            #TEMPLATE
-
-                <a href="" class="tilelinkhtml5">
-                    <div class="tilesubject">
-                        <br /> <NAZWA PRZYCISKU>
-                    </div>
-                </a>
-
-            -->
-
-            <div class="middlepanel">
-
-                <a href="" class="tilelinkhtml5">
-                    <div class="tilesubject">
-                        <br />Montaż i konfiguracja lokalnych sieci komputerowych
-                    </div>
-                </a>
-    
-                <a href="" class="tilelinkhtml5">
-                    <div class="tilesubject">
-                        <br />Projektowanie baz danych
-                    </div>
-                </a>
+                <section class="halfbox shortcutsbox">
                     
-                <a href="" class="tilelinkhtml5">
-                    <div class="tilesubject">
-                        <br />Tworzenie stron i aplikacji internetowych
+                    <div class="shortcut">
+                        <a class="shortcut" href="">
+                        <img class="shortcuticon" src="menuarchive.png">
+                        ARCHIWUM
+                        </a>
                     </div>
-                </a>
-    
-                <a href="" class="tilelinkhtml5">
-                    <div class="tilesubject">
-                        <br />Informatyka
+                    
+                    <div class="shortcut">
+                        <a class="shortcut" href="https://drive.google.com/drive/folders/1fXO-sv7mnvt0AUni3PzFCt1ZqTEh75JK?usp=sharing">
+                        <img class="shortcuticon" src="menugdrive.png">
+                        GDRIVE
+                        </a>
                     </div>
-                </a>
-    
-                <a href="" class="tilelinkhtml5">
-                    <div class="tilesubject">
-                        <br />Witryny i aplikacje internetowe
+                    
+                    <div class="shortcut">
+                        <a class="shortcut" href="">
+                        <img class="shortcuticon" src="menutemplate.png">
+                        SZABLONY
+                        </a>
                     </div>
-                </a>
+                    
+                    <div class="shortcut">
+                        <a class="shortcut" href="https://github.com/KrzakeR/KrzakeR.github.io">
+                        <img class="shortcuticon" src="menugithub.png">
+                        GITHUB
+                        </a>
+                    </div>
                 
-                <a href="" class="tilelinkhtml5">
-                    <div class="tilesubject">
-                        <br />Projektowanie baz danych
-                    </div>
-                </a>
-                
-                <a href="" class="tilelinkhtml5">
-                    <div class="tilesubject">
-                        <br />Systemy baz danych
-                    </div>
-                </a>
+                </section>  <!-- KONIEC "halfbox shortcutsbox" -->    
+            </section>  <!-- KONIEC "topbox" -->   
+        </section>  <!-- KONIEC "middlepanel" -->   
 
-                <a href="https://github.com/KrzakeR/KrzakeR.github.io" class="tilelinkhtml5">
-                    <div class="tilesubject">
-                        <br />Github
-                    </div>
-                </a>
-
-                <a href="" class="tilelinkhtml5">
-                    <div class="tilesubject">
-                        <br />Google Drive
-                    </div>
-                </a>
+        <div style="clear: both;"></div>
     
-                <div style="clear: both;"></div>
-                
-            </div>
-        </div>
-
-            <div style="clear:both;"></div>
-
-        <div id="bottompanel">
-            
+        <footer>
+        
             <!-- STOPKA -->
-        
-        <div id="stopka">
-        
-            <div class="stopka">2019 &copy; | KrzakeR | Wszelkie prawa zastrzeżone | krzakerpl@gmail.com</div>
-            <div class="version"><a href="" class="tilelinkhtml5">WERSJA : B02</a></div>
-        
-        </div>    
-        </div>
+            
+            <div class="footer">2019 &copy; | KrzakeR | krzakerpl@gmail.com</div>
+            <div class="version"><a href="https://github.com/KrzakeR/KrzakeR.github.io/commits" class="homelink">WERSJA : C01</a></div> 
+
+        </footer>
 	
-	</div>
-	
+    </div>
+    
+	<!-- ODŚWIEŻANIE STRONY CO 3 SEK (TYLKO W TRAKCIE PRAC)  -->
+    
+    <!-- <meta http-equiv="refresh" content="3" > AUTOREFRESH -->
+
 </body>
 </html>

@@ -11,7 +11,7 @@
 	color: ;
 	text-align: ;
 }
-*/
+*/ 
 
 body
 {
@@ -23,18 +23,24 @@ body
 
 #maincontainer
 {
-	width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
+	min-width: 1000px;  max-width: 75vw;
+	margin: auto;
 }
 
-#logobg
-{
-	margin-left: auto;
-	margin-right: auto;
-	border: 8px solid #169DE0;
+@media only screen and (max-width: 720px) { /* MOŻE SIĘ PSUĆ */
+	body {
+		max-width: 95vw;
+		margin: auto;
+	}
+  }
+
+/* ---- LOGO ---- */
+
+header
+{	
+	margin: 0 auto 0 auto;
+	border: 8px solid #3399ff;
 	border-bottom: 0px;
-	width: 964px;
 	background-color: #252525;
 }
 
@@ -42,237 +48,158 @@ body
 {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 70px;
-	width: 964px;
 	padding-top: 35px;
 	text-align: center;
 }
 
 #zegar
 {
-	padding-right: 10px;
+	margin-right: 10px;
 	padding-bottom: 5px;
-	float: right;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 20px;
-	text-align: center;
+	text-align: right;
 }
-
-
-/* ---- TOP PANEL ---- */
-
-#toppanel
-{
-	background-color: #008cff;
-	width: 1000px;
-	height: 550px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#information
-{
-	float: left;
-	width: 400px;
-}
-
-.infotitle
-{
-	background-color: #169DE0;
-	width: 400px; height: 30px;
-	padding-left: 15px; padding-right: 15px;
-	padding-top: 10px; padding-bottom: 5px;
-	float: left;
-	text-align: center;	
-}
-
-.information
-{
-	float: left;
-	width: 400px; height: 475px;
-	background-color: #222;
-	text-align: left;
-	padding: 15px;
-}
-
-#update
-{
-	float: left;
-	margin-left: 30px;
-	width: 260px;
-}
-
-.updatetitle
-{
-
-	background-color: rgb(19, 143, 214);
-	width: 260px; height: 30px;
-	padding-left: 15px; padding-right: 15px;
-	padding-top: 10px; padding-bottom: 5px;
-	float: left;
-	text-align: center;	
-}
-
-.updateinformation
-{
-	float: left;
-	width: 260px;
-	height: 475px;
-	background-color: #303030;
-	text-align: left;
-	padding: 15px;
-}
-
-#recentlyadded
-{
-	float: left;
-	margin-left: 30px;
-	width: 250px;
-}
-
-.recenttitle
-{
-	background-color:rgb(10, 124, 190);
-	width: 250px; height: 30px;
-	padding-left: 15px; padding-right: 15px;
-	padding-top: 10px; padding-bottom: 5px;
-	float: left;
-	text-align: center;	
-}
-
-.recentlyadded
-{
-	float: left;
-	width: 250px;
-	height: 419px;
-}
-
-.recenttile1
-{
-	background-color: #444;
-	width: 250px; height: 33%;
-	padding-left: 15px; padding-right: 15px;
-	padding-top: 15px; padding-bottom: 15px;
-	float: left;
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;	
-}
-
-.recenttile2
-{
-	background-color: #555;
-	width: 250px; height: 33%;
-	padding-left: 15px; padding-right: 15px;
-	padding-top: 15px; padding-bottom: 15px;
-	float: left;
-	text-align: center;	
-}
-
-/* ---- xxx ---- */
-
-/* ---- TOP BORDER ---- */
-
-#borderpanel
-{
-	/* NICOŚĆ */
-}
-
-#topborder
-{
-	background-color: #169DE0;
-	width: 1000px; height: 20px;
-}
-
-#bordertitle
-{
-	margin-left: auto;
-	margin-right: auto;
-	width: 940px; height: 50px;
-	background-color: #252525;
-	font-size: 40px;
-	padding: 20px;
-	text-align: center;
-}
-
-/* ---- xxx ---- */
 
 /* ---- MIDDLE PANEL ---- */
 
-.middlepanel
+#middlepanel
 {
-	background-color: #444;
-	width: 978px;
-	padding-top: 10px; padding-bottom: 10px;
-	margin-right: auto;
-	margin-left: auto;
+	width: 100%;
+	min-height: 500px;
 }
 
-.tilesubject
+/* ---- TYTUŁY ---- */
+
+.title
 {
-	border: 8px solid #169DE0;
-	font-size: 30px;
-	padding: 15px;
-	width: 260px; height: 220px;
-	margin: 10px;
-	background-color: #222;
-	float: left;
+	float:left;
+	width: calc( 50% - 12px );
+	padding: 5px 0 7px 0;
+	background-color: #1177dd;
+	border-top: 8px solid #3399ff; border-left: 8px solid #3399ff; border-right: 8px solid #3399ff;
+	height: 20px;
 	text-align: center;
 }
 
-.tilesubject:hover
+.info
 {
-	background-color: #083961;
+	border-right: 4px solid #3399ff;
 }
 
-/* ---- xxx ---- */
+.shortcuts
+{
+	border-left: 4px solid #3399ff;
+}
+
+/* ---- POJEMNIK NA SEKCJE ---- */
+
+.topbox
+{
+	border: 8px solid #3399ff;
+	float: left;
+	width: calc(100% - 16px);
+	background-color: #1177dd;
+	height: 500px;
+}
+
+.halfbox
+{
+	float: left;
+	width: calc( 50% - 4px );
+	background-color: #1177dd;
+	background: #191919;
+	height: 500px;
+}
+
+/* ---- INFORMACJE ---- */
+
+.infobox
+{
+	width: calc( 50% - 34px ); height: 470px;
+	text-align: justify;
+	padding: 15px;
+	border-right: 4px solid #3399ff;
+}
+
+/* ---- SKRÓTY ---- */
+
+.shortcutsbox
+{
+	display: flex;
+	border-left: 4px solid #3399ff;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.shortcut
+{
+	font-size: 25px;
+	background-color: #191919;
+	width: 50%; height: 50%;
+	display: flex;
+	text-align: center;
+	vertical-align: center;   
+	justify-content: center;
+	flex-direction: column;
+	margin: auto;
+}
+
+a.shortcut
+{
+	width: 100%; height: 100%;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+}
+
+.shortcut:hover
+{
+	background-color: #003d83;
+}
+
+.shortcuticon
+{
+	margin-left: auto; margin-right: auto;
+	margin-bottom: 0.5em;
+	height: 170px; width: 170px; 
+}
 
 /* ---- STOPKA ---- */
 
-#stopka
+footer
 {
+	min-width: 1000px;  max-width: 75vw;
 	margin-left: auto;
 	margin-right: auto;
-	width: 960px; height: 40px;
+	height: 43px;
 	background-color: #252525;
+	padding: 8px 0 8px 0;
 	font-size: 40px;
-	padding: 10px;
 	text-align: center;
 }
 
-.stopka
+.footer
 {
 	color: #008cff;
 	font-size: 18px;
 	float: center;
-	width: 100%;
 	text-align: center;
 }
 
 .version
 {
 	font-size: 12px;
+	margin-top: 3px;
 	float: center;
-	width: 100%;
 	text-align: center;
 }
 
-/* ---- xxx ---- */
+/* ---- KOLOR LINKÓW ---- */
 
-/* ---- KOLOR LINKU ---- */
-
-a.tilelink
-{
-	color: #ffffff;
-	text-decoration: none;
-	display: block;
-	width: 230px;
-	height: 142px;
-}
-
-a.tilelinkhtml5
+a.homelink
 {
 	color: #ffffff;
 	text-decoration: none;
 }
-
-/* ---- xxx ---- */
