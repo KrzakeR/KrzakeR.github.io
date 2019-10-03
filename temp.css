@@ -1,0 +1,92 @@
+/* TEMPLATE
+{
+	background-color: ;
+	width: ; height: ;
+	padding-left: ; padding-right: ;
+	padding-top: ; padding-bottom: ;
+	margin: ;
+	float: ;
+	font-family: ;
+	font-size: ;
+	color: ;
+	text-align: ;
+}
+*/ 
+
+
+#temp
+{
+	border: 8px solid #3399ff;
+	border-top: 0;
+	padding: 20px;
+	background-color: #252525;
+}
+
+.zadanie
+{
+
+	width: 65%;	
+	margin: 0 auto 15px auto;
+	border: 8px solid #1177dd;
+}
+
+.codetitle
+{
+	font-size: 30px;
+	text-decoration: bold;
+	text-align: center;
+	padding: 0.5em;
+	background-color: #3399ff;
+}
+
+.codedesc
+{
+	text-align: justify;
+	padding: 1em 0.5em 1em 0.5em;
+}
+
+.code
+{
+	padding: 0.5em;
+	background-color: #fff;
+}
+
+.codelinks
+{
+	width: 65%; height: 50px;
+	margin: 0 auto 15px auto;
+	background-color: #1177dd;
+	padding: 8px;
+}
+
+.codelink
+{
+	text-align: center;
+	background-color: #3399ff;
+	float: left;
+	width: calc(50% - 4px); height: calc(50px - 1em);
+}
+
+.leftcodelink
+{
+	float: left;
+}
+
+.rightcodelink
+{
+	float: right;
+}
+
+.codelink:hover
+{
+	background-color: #003d83;
+}
+
+a.codelink
+{
+	padding: 0.5em 0 0.5em 0;
+	display: block;
+	width: 100%; height: 100%;
+	text-decoration: none;
+	color: #fff;
+}

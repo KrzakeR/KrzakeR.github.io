@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>Krzaczasta Dolina - C++</title>
+	
+	<meta name="description" content="Krzaczasta strona" />
+	<meta name="keywords" content="krzaker, krzaczasta, dolina, krzaczaste, archiwium, kushakeru" />
+    <link rel="stylesheet" href="style.css" type="text/css" /><link rel="stylesheet" href="temp.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato|Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="timer.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    	
+</head>
+
+<body>
+
+	<div id="maincontainer">
+        
+        <!-- LOGO -->
+
+        <header>
+            <div id="logo"><a href="index.html" class="homelink">Krzaczasta Dolina</a></div>
+			<div style="clear: both;"></div>
+        </header>
+
+        <!-- GŁÓWNA CZĘŚĆ STRONY -->
+        
+        <section id="temp">
+
+            <!-- ZADANIE PIERWSZE -->
+            
+            <section class="zadanie">
+
+                <div class="codetitle">
+                    C++ - ćwiczenia z wykorzystaniem pętli | 1 |
+                </div>
+
+                <div class="codedesc">
+                    Napisz program, który pobiera liczby wprowadzane przez użytkownika, aż do momentu,
+                    gdy ich suma przekroczy wartość 75. Przed końcem program powinien wyświetlić sumę
+                    wprowadzonych liczb.
+                </div>
+
+            <div class=code>
+            <code>
+
+<pre class="prettyprint">
+#include <iostream>
+using namespace std;
+
+int wynik=0, kolejna=0;
+
+int main() 
+{
+    while(wynik<=75)
+    {
+        cout << "Podaj liczbe : ";
+        cin >> kolejna;
+        wynik+=kolejna;
+    }
+    cout << wynik;
+    return 0;
+}
+</pre>
+
+            </code>
+            </div>
+            
+            </section>
+
+            <!-- ZADANIE DRUGIE -->
+
+            <section class="zadanie">
+
+                <div class="codetitle">
+                    C++ - ćwiczenia z wykorzystaniem pętli | 2 |
+                </div>
+
+                <div class="codedesc">
+                    Napisz program, który wypisuje kolejne liczby naturalne oddzielone spacjami z dodatniego
+                    przedziału <n,m> określonego przez użytkownika.                            
+                </div>
+
+            <div class=code>
+            <code>
+
+<pre class="prettyprint">
+#include <iostream>
+using namespace std;
+
+int n, m;
+
+int main() 
+{
+    cout << "Podaj wartosc minimalna : ";
+    cin >> n;
+    cout << "Podaj wartosc maksymalna : ";
+    cin >> m;
+
+    for (n>0; n<=m; n++)
+        cout << n << " ";
+    
+    return 0;
+}
+</pre>
+        
+            </code>
+            </div>
+                    
+            </section>
+
+            <!-- ZADANIE TRZECIE -->
+
+            <section class="zadanie">
+
+                    <div class="codetitle">
+                        C++ - ćwiczenia z wykorzystaniem pętli | 3 |
+                    </div>
+    
+                    <div class="codedesc">
+                            Napisz program, który wyświetla kwadraty kolejnych liczb naturalnych, począwszy od
+                            zera a skończywszy na kwadracie liczby podanej przez użytkownika.                            
+                    </div>
+    
+                <div class=code>
+                <code>
+    
+<pre class="prettyprint">
+#include <iostream>
+using namespace std;
+
+int n, m=0;
+
+int main() 
+{
+    cout << "Podaj liczbe : ";
+    cin >> n;
+        
+    for (m=0; m<=n; m++)
+        cout << m*m << endl;
+
+    return 0;
+}
+</pre>
+            
+                </code>
+                </div>
+
+            </section>
+
+            <!-- ZADANIE CZWARTE -->
+
+            <section class="zadanie">
+
+                    <div class="codetitle">
+                        C++ - ćwiczenia z wykorzystaniem pętli | 4 |
+                    </div>
+    
+                    <div class="codedesc">
+                        Przygotuj schemat blokowy algorytmu wypisującego wszystkie dwucyfrowe liczby
+                        parzyste podzielne przez 3.                            
+                    </div>
+    
+                <div class=code>
+                <code>
+    
+<pre class="prettyprint">
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    for (int i=10; i<=99; i++)
+    {
+        if (i%3==0)
+        cout << i << " ";
+    }
+    
+    return 0;
+}
+</pre>
+            
+                </code>
+                </div>
+                        
+                </section>
+        
+            <section class="codelinks">
+                <div class="codelink leftcodelink"><a class="codelink" href="http://ecg.vot.pl/data/uploads/cpp/cwc_petle.pdf">ZADANIA</a></div>
+                <div class="codelink rightcodelink"><a class="codelink" href="https://drive.google.com/drive/folders/1ps_77uoEsYMSFAYbn70zQRyWpPN-321n">PLIKI</a></div>
+            </section>
+            
+        </section>
+
+
+        <div style="clear: both;"></div>
+    
+        <footer>
+        
+            <!-- STOPKA -->
+            
+            <div class="footer">2019 &copy; | KrzakeR | krzakerpl@gmail.com</div>
+            <div class="version"><a href="https://github.com/KrzakeR/KrzakeR.github.io/commits" class="homelink">WERSJA : tmp.A01</a></div> 
+
+        </footer>
+	
+    </div>
+    
+	<!-- ODŚWIEŻANIE STRONY CO 3 SEK (TYLKO W TRAKCIE PRAC)  -->
+    
+    <!-- <meta http-equiv="refresh" content="3" > AUTOREFRESH -->
+
+</body>
+</html>
