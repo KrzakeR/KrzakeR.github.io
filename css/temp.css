@@ -13,20 +13,26 @@
 }
 */ 
 
+#logo
+{
+	padding-bottom: 0.25em;
+}
 
 #temp
 {
-	border: 8px solid #3399ff;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	border: 8px 0 8px 0 solid #00ccff;
 	border-top: 0;
 	padding: 20px;
-	background-color: #252525;
+	background-color: #161616;
 }
 
 .zadanie
 {
 	width: 65%;	
 	margin: 0 auto 15px auto;
-	border: 8px solid #1177dd;
+	border: 8px solid #00ccff;
 }
 
 .codetitle
@@ -35,11 +41,11 @@
 	text-decoration: bold;
 	text-align: center;
 	padding: 0.5em;
-	background-color: #3399ff;
 }
 
 .codedesc
 {
+	background-color: #333;
 	text-align: justify;
 	padding: 1em 0.5em 1em 0.5em;
 }
@@ -60,14 +66,14 @@ pre
 {
 	width: 65%; height: 50px;
 	margin: 0 auto 15px auto;
-	background-color: #1177dd;
+	background-color: #00ccff;
 	padding: 8px;
 }
 
 .codelink
 {
 	text-align: center;
-	background-color: #3399ff;
+	background-color: #222;
 	float: left;
 	width: calc(50% - 4px); height: calc(50px - 1em);
 }

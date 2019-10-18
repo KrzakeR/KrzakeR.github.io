@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="pl">
 <head>
+    
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	
@@ -8,15 +9,15 @@
 	
 	<meta name="description" content="Krzaczasta strona" />
 	<meta name="keywords" content="krzaker, krzaczasta, dolina, krzaczaste, archiwium, kushakeru" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
-	<link href='http://fonts.googleapis.com/css?family=Lato|Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	
-	<script src="timer.js"></script>
+    <link rel="stylesheet" href="../krzaker.github.io/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../krzaker.github.io/css/krzakergithubio.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap&subset=latin-ext" rel="stylesheet">
+    <script src="../krzaker.github.io/js/timer.js"></script>
     	
 </head>
 
 
-<body onload="odliczanie();">
+<body>
 
 	<div id="maincontainer">
         
@@ -26,7 +27,7 @@
             <div id="logo"><a href="index.html" class="homelink">Krzaczasta Dolina</a></div>
             <div id="zegar">12:00:00</div>
 			<div style="clear: both;"></div>
-        </header>
+        </header> 
 
         <!-- GŁÓWNA CZĘŚĆ STRONY -->
 
@@ -34,8 +35,8 @@
             
             <!-- TYTUŁY -->
 
-            <div class="title info">INFORMACJE</div>
-            <div class="title shortcuts">SKRÓTY</div>
+            
+            
             
             <div style="clear: both;"></div>
 
@@ -46,14 +47,17 @@
                 <!-- INFORMACJE -->
 
                 <article class="halfbox infobox">
-                    Witaj na Krzaczastej Dolinie. <br /><br /> 
+                    
+                    <div class="title info">INFORMACJE</div>
+                    
+                    <p id="infotext">Witaj na Krzaczastej Dolinie. <br /><br /> 
                     Znajdziesz tu zbiór rzeczy, którymi się zajmuję w wolnym czasie.
                     Aktualnie za dużo tu nie ma, ale może kiedyś coś tu będzie.
                     Wszelkie rzeczy związane z stroną (np. kod źródłowy) Znajdziesz
                     na Githubie, klikając na skrót obok.
                     <br /><br />  
                     PS. C++ znajduje się w Szablonach (rozwiązanie tymczasowe), a Archiwum 
-                    nadal nic nie robi :v 
+                    nadal nic nie robi :v </p>
                     
                 </article>
 
@@ -63,29 +67,29 @@
                     
                     <div class="shortcut">
                         <a class="shortcut" href="">
-                        <img class="shortcuticon" src="menuarchive.png">
-                        ARCHIWUM
+                        <i class="icon-archive"></i>
+                        <p>ARCHIWUM</p>
                         </a>
                     </div>
                     
                     <div class="shortcut">
                         <a class="shortcut" href="https://drive.google.com/drive/folders/1fXO-sv7mnvt0AUni3PzFCt1ZqTEh75JK?usp=sharing">
-                        <img class="shortcuticon" src="menugdrive.png">
-                        GDRIVE
+                        <i class="icon-google"></i>
+                        <p>GDRIVE</p>
                         </a>
                     </div>
                     
                     <div class="shortcut">
                         <a class="shortcut" href="temp.html">
-                        <img class="shortcuticon" src="menutemplate.png">
-                        SZABLONY
+                        <i class="icon-template"></i>
+                        <p>SZABLONY</p>
                         </a>
                     </div>
                     
                     <div class="shortcut">
                         <a class="shortcut" href="https://github.com/KrzakeR/KrzakeR.github.io">
-                        <img class="shortcuticon" src="menugithub.png">
-                        GITHUB
+                        <i class="icon-github"></i>
+                        <p>GITHUB</p>
                         </a>
                     </div>
                 
@@ -94,21 +98,22 @@
         </section>  <!-- KONIEC "middlepanel" -->   
 
         <div style="clear: both;"></div>
+	
+    </div>
     
         <footer>
         
             <!-- STOPKA -->
             
             <div class="footer">2019 &copy; | KrzakeR | krzakerpl@gmail.com</div>
-            <div class="version"><a href="https://github.com/KrzakeR/KrzakeR.github.io/commits" class="homelink">WERSJA : C02</a></div> 
+            <div class="version"><a href="https://github.com/KrzakeR/KrzakeR.github.io/commits" class="homelink">WERSJA : D01</a></div> 
 
         </footer>
-	
-    </div>
     
 	<!-- ODŚWIEŻANIE STRONY CO 3 SEK (TYLKO W TRAKCIE PRAC)  -->
+    <!-- <meta http-equiv="refresh" content="3" ><p style="text-align: center;">! AUTOREFRESH !</p> -->
     
-    <!-- <meta http-equiv="refresh" content="3" > AUTOREFRESH -->
+    <script>odliczanie();</script> <!-- ZEGAR -->
 
 </body>
 </html>

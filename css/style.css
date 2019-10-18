@@ -15,48 +15,41 @@
 
 body
 {
-	background-color: #303030;
-	font-family: 'Lato', sans-serif;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #161616;
 	font-size: 20px;
-	color: #ffffff;
+	color: #00ccff;
 }
 
 #maincontainer
 {
-	min-width: 1000px;  max-width: 75vw;
-	margin: auto;
+	min-width: 700px;
+	margin-bottom: 43px;
 }
-
-@media only screen and (max-width: 720px) { /* MOŻE SIĘ PSUĆ */
-	body {
-		max-width: 95vw;
-		margin: auto;
-	}
-  }
 
 /* ---- LOGO ---- */
 
 header
 {	
+	padding-top:1em;
 	margin: 0 auto 0 auto;
-	border: 8px solid #3399ff;
-	border-bottom: 0px;
-	background-color: #252525;
+	border-bottom: 8px solid #00ccff;
+	background-color: #111;
 }
 
 #logo
 {
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 70px;
-	padding-top: 35px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 75px;
 	text-align: center;
 }
 
 #zegar
 {
+	color: #fff;
 	margin-right: 10px;
 	padding-bottom: 5px;
-	font-family: 'Josefin Sans', sans-serif;
 	font-size: 20px;
 	text-align: right;
 }
@@ -65,98 +58,105 @@ header
 
 #middlepanel
 {
-	width: 100%;
-	min-height: 500px;
+	margin-top: 1em;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 
-/* ---- TYTUŁY ---- */
-
-.title
-{
-	float:left;
-	width: calc( 50% - 12px );
-	padding: 5px 0 7px 0;
-	background-color: #1177dd;
-	border-top: 8px solid #3399ff; border-left: 8px solid #3399ff; border-right: 8px solid #3399ff;
-	height: 20px;
-	text-align: center;
-}
-
-.info
-{
-	border-right: 4px solid #3399ff;
-}
-
-.shortcuts
-{
-	border-left: 4px solid #3399ff;
-}
 
 /* ---- POJEMNIK NA SEKCJE ---- */
 
 .topbox
 {
-	border: 8px solid #3399ff;
+	margin: 0 3em 0 3em;
+	min-height:60vh;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 	float: left;
-	width: calc(100% - 16px);
-	background-color: #1177dd;
-	height: 500px;
+	min-width:450px;
 }
 
 .halfbox
 {
-	float: left;
-	width: calc( 50% - 4px );
-	background-color: #1177dd;
-	background: #191919;
-	height: 500px;
+	display: flex;
+	flex-basis: 400px;
+	flex-grow: 0.4;
 }
 
 /* ---- INFORMACJE ---- */
 
+.title
+{
+	padding:0.5em;
+	width: calc (100% - 0.5em);
+	float: left;
+	border-bottom: 8px solid #00ccff;
+	color: #00ccff;
+	height: 20px;
+	text-align: center;
+}
+
 .infobox
 {
-	width: calc( 50% - 34px ); height: 470px;
+	color: #fff;
+	padding: 0.5em;
+	padding-top: 0;
+	display: flex;
+	flex-basis: 500px;
+	flex-grow: 0.1;
+	flex-direction: column;
 	text-align: justify;
-	padding: 15px;
-	border-right: 4px solid #3399ff;
+	margin-bottom: 1em;
+}
+
+#infotext
+{
+	padding: 0 0.5em;
 }
 
 /* ---- SKRÓTY ---- */
 
 .shortcutsbox
 {
+	flex-basis:500px;
+	min-height: 60vh;
 	display: flex;
-	border-left: 4px solid #3399ff;
+	flex-grow: 0.50;
 	flex-wrap: wrap;
 	flex-direction: row;
+	align-items: center;
 	justify-content: space-around;
 }
 
 .shortcut
 {
+	padding-top: 1em;
+	flex-basis: 40%;
+	color: #00ccff;
 	font-size: 25px;
-	background-color: #191919;
-	width: 50%; height: 50%;
 	display: flex;
 	text-align: center;
 	vertical-align: center;   
 	justify-content: center;
 	flex-direction: column;
-	margin: auto;
 }
 
 a.shortcut
 {
+	display: block;
 	width: 100%; height: 100%;
 	text-decoration: none;
-	font-weight: bold;
-	color: #fff;
+	color: #00ccff;
 }
 
 .shortcut:hover
 {
-	background-color: #003d83;
+	color: #fff;
 }
 
 .shortcuticon
@@ -170,11 +170,11 @@ a.shortcut
 
 footer
 {
-	min-width: 1000px;  max-width: 75vw;
-	margin-left: auto;
-	margin-right: auto;
+	border-top: 6px solid #00ccff;
+	position: fixed; bottom: 0;
+	width: 100vw;
 	height: 43px;
-	background-color: #252525;
+	background-color: #111;
 	padding: 8px 0 8px 0;
 	font-size: 40px;
 	text-align: center;
@@ -182,7 +182,8 @@ footer
 
 .footer
 {
-	color: #008cff;
+	margin-left: 0;
+	color: #00ccff;
 	font-size: 18px;
 	float: center;
 	text-align: center;
@@ -200,6 +201,6 @@ footer
 
 a.homelink
 {
-	color: #ffffff;
+	color: #fff;
 	text-decoration: none;
 }
