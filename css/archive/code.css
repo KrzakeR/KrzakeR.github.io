@@ -15,6 +15,7 @@
 
 #logo
 {
+	margin-left: auto; margin-right: auto;
 	padding-bottom: 0.25em;
 }
 
@@ -30,7 +31,7 @@
 
 .zadanie
 {
-	width: 65%;	
+	width: 65%;	min-width:625px;
 	margin: 0 auto 15px auto;
 	border: 8px solid #00ccff;
 }
