@@ -1,0 +1,90 @@
+function txtŻarówka(){
+document.open();
+document.write('\n' 
+    +'function yellowbulb(){' + '\n'
+    +'console.log(&quot;Hello&quot;);' + '\n'
+    +'document.getElementById(&apos;myImage&apos;).src=&apos;obrazki/pic_bulbon.gif&apos;;' + '\n'
+    +'document.getElementById(&apos;stan&apos;).innerHTML = &apos;Żarówka jest włączona&apos;;' + '\n'
+    +'}' + '\n'
+    + '\n'
+    +'function offbulb(){' + '\n'
+    +'document.getElementById(&apos;myImage&apos;).src=&apos;obrazki/pic_bulboff.gif&apos;;' + '\n'
+    +'document.getElementById(&apos;stan&apos;).innerHTML = &apos;Żarówka jest wyłączona&apos;;' + '\n'
+    +'}' + '\n'
+    + '\n'
+    +'function greenbulb(){' + '\n'
+    +'document.getElementById(&apos;myImage&apos;).src=&apos;obrazki/greenbulb.png&apos;;' + '\n'
+    +'document.getElementById(&apos;stan&apos;).innerHTML = &apos;Żarówka jest zielona&apos;;' + '\n'
+    +'}'
+    );
+document.close();
+}
+
+function txtAlertConfirmPrompt(){
+document.open();
+document.write('\n' 
+    +'function funkcjaalert() {' + '\n'
+    +'alert(&quot;Włączyłeś żarówkę&quot;);' + '\n'
+    +'document.getElementById(&apos;myImage&apos;).src=&apos;obrazki/pic_bulbon.gif&apos;;' + '\n'
+    +'document.getElementById(&apos;stan&apos;).innerHTML = &apos;Żarówka jest włączona&apos;;' + '\n'
+    +'}' + '\n'
+    + '\n'
+    +'function funkcjaconfirm() {' + '\n'
+    +'var r = confirm(&quot;Czy chcesz wyłączyć żarówkę ?&quot;);' + '\n'
+    +'    if (r == true) {' + '\n'
+    +'        document.getElementById(&apos;myImage&apos;).src=&apos;obrazki/pic_bulboff.gif&apos;;' + '\n'
+    +'        document.getElementById(&apos;stan&apos;).innerHTML = &apos;Żarówka jest wyłączona&apos;;' + '\n'
+    +'    }' + '\n' 
+    +'    else { }' + '\n'
+    +'}' + '\n'
+    + '\n'
+    +'function funkcjaprompt() {' + '\n'
+    +'var color = prompt(&quot;Jaki kolor tła chcesz ?\n(czerwony,zielony,niebieski lub szary)&quot;);' + '\n'
+    +'    if (color == &quot;czerwony&quot;)' + '\n'
+    +'        document.body.style.backgroundColor = &quot;#b30000&quot;;' + '\n'
+    +'    else if (color == &quot;zielony&quot;)' + '\n'
+    +'        document.body.style.backgroundColor = &quot;#009933&quot;;' + '\n'
+    +'    else if (color == &quot;niebieski&quot;)' + '\n'
+    +'        document.body.style.backgroundColor = &quot;#0066ff&quot;;' + '\n'
+    +'    else if (color == &quot;szary&quot;)' + '\n'
+    +'        document.body.style.backgroundColor = &quot;#161616&quot;;' + '\n'
+    +'}'
+    );
+document.close();
+}
+
+function txtZadaniaPodstawy(){
+document.open();
+document.write('\n' 
+    +'function zadanie3podstawy() {' + '\n' 
+    +'const stala = &quot;test&quot;;' + '\n'
+    +'var zmienna = &quot;test2&quot;;' + '\n'
+    +'let zmienna2 = &quot;10&quot;;' + '\n'
+    +'console.log(stala, typeof stala);' + '\n'
+    +'console.log(zmienna, typeof zmienna);' + '\n'
+    +'console.log(zmienna2, typeof zmienna2);' + '\n'
+    +'}' + '\n'
+    +'\n' 
+    +'function zadanie4podstawy() {' + '\n'
+    +'const number1 = &quot;23&quot;;' + '\n'
+    +'const number2 = &quot;34&quot;;' + '\n'
+    +'console.log(number1, typeof number1);' + '\n'
+    +'console.log(number2, typeof number2);' + '\n'
+    +'console.log(+number1 + +number2);' + '\n'
+    +'}' + '\n'
+    +'\n' 
+    +'function zadanie5podstawy() {' + '\n'
+    +'let nr;' + '\n'
+    +'console.log(typeof nr);' + '\n'
+    +'}' + '\n'
+    +'\n'
+    +'function zadanie6podstawy() {' + '\n'
+    +'let wiek = prompt(&quot;Ile masz lat?&quot;);' + '\n'
+    +'    if (wiek>=18)' + '\n'
+    +'        alert(&quot;Ok, możesz wejść.&quot;);' + '\n'
+    +'    else' + '\n'
+    +'        alert(&quot;Masz za mało lat.&quot;);' + '\n'
+    +'}'
+    );
+document.close();
+}

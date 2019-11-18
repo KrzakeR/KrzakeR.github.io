@@ -19,7 +19,7 @@
 	padding-bottom: 0.25em;
 }
 
-#temp
+#zadania
 {
 	font-family: 'Montserrat', sans-serif;
 	color: #fff;
@@ -31,7 +31,7 @@
 
 .zadanie
 {
-	width: 65%;	min-width:625px;
+	width: 65%;	min-width:875px;
 	margin: 0 auto 15px auto;
 	border: 8px solid #00ccff;
 }
@@ -61,6 +61,7 @@
 pre
 {
 	overflow: auto;
+	font-size: 15px;
 }
 
 .codelinks

@@ -13,14 +13,13 @@
     <link rel="stylesheet" href="../../css/archive/code.css" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap&subset=latin-ext" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="jscode.js"></script>
     	
 </head>
 
 <body>
 
-    <!-- UWAGA TEN HTML TO TOTALNY SYF! CZYTASZ NA WŁASNĄ ODPOWIEDZIALNOŚĆ :V -->
-
-	<div id="maincontainer"> <!-- >> &lt;iostream&gt; &lt;&lt; -->
+	<div id="maincontainer">
         
         <!-- LOGO -->
 
@@ -31,160 +30,83 @@
 
         <!-- GŁÓWNA CZĘŚĆ STRONY -->
 
-    <section id="temp">
+        <section id="zadania">
 
-        <!-- ŻARÓWKA -->
+            <!-- ŻARÓWKA -->
 
-        <section class="zadanie">
+            <section class="zadanie">
 
-            <div class="codetitle">Żarówka</div>
+                <div class="codetitle">Żarówka</div>
 
-            <div class="codedesc">
-                Włacz / Wyłącz / Zielona
-            </div>
+                <div class="codedesc">
+                    Włacz / Wyłącz / Zielona
+                </div>
 
-        <div class=code>
-        <code>
+                    <div class=code>  
+                        <code> 
+                        <pre class="prettyprint lang-js">
+                        <script>txtŻarówka();</script>
+                        </pre>
+                        </code>             
+                    </div>
+            
+            </section>
+            
+            <!-- ALERT CONFIRM PROMPT -->
 
-<pre class="prettyprint lang-js">
-function yellowbulb(){
-console.log("Hello");
-document.getElementById('myImage').src='obrazki/pic_bulbon.gif';
-document.getElementById('stan').innerHTML = 'Żarówka jest włączona';
-}
-
-function offbulb(){
-document.getElementById('myImage').src='obrazki/pic_bulboff.gif';
-document.getElementById('stan').innerHTML = 'Żarówka jest wyłączona';
-}
-
-function greenbulb(){
-document.getElementById('myImage').src='obrazki/greenbulb.png';
-document.getElementById('stan').innerHTML = 'Żarówka jest zielona';
-}
-</pre>
-
-        </code>
-        </div>
-        
-        </section>
-         
-        <!-- ALERT CONFIRM PROMPT -->
-
-        <section class="zadanie">
+            <section class="zadanie">
 
                 <div class="codetitle">Wyskakujące okienka</div>
-    
+
                 <div class="codedesc">
                     Alert | Confirm | Prompt
                 </div>
-    
-            <div class=code>
-            <code>
-    
-    <pre class="prettyprint lang-js">
-function funkcjaalert() {
-alert("Włączyłeś żarówkę");
-document.getElementById('myImage').src='obrazki/pic_bulbon.gif';
-document.getElementById('stan').innerHTML = 'Żarówka jest włączona';
-}
-
-function funkcjaconfirm() {
-var r = confirm("Czy chcesz wyłączyć żarówkę ?");
-    if (r == true) {
-        document.getElementById('myImage').src='obrazki/pic_bulboff.gif';
-        document.getElementById('stan').innerHTML = 'Żarówka jest wyłączona';
-    } 
-    else { }
-}
-
-function funkcjaprompt() {
-var color = prompt("Jaki kolor tła chcesz ?\n(czerwony,zielony,niebieski lub szary)");
-    if (color == "czerwony")
-        document.body.style.backgroundColor = "#b30000";
-    else if (color == "zielony")
-        document.body.style.backgroundColor = "#009933";
-    else if (color == "niebieski")
-        document.body.style.backgroundColor = "#0066ff";
-    else if (color == "szary")
-        document.body.style.backgroundColor = "#161616";
-}
-    </pre>
-    
-            </code>
-            </div>
-            
-        </section>
-
-        <!-- ZADANIA 3-6 PODSTAWY-->
         
-        <section class="zadanie">
+                    <div class=code>
+                        <code>
+                        <pre class="prettyprint lang-js">
+                        <script>txtAlertConfirmPrompt();</script>
+                        </pre>
+                        </code>
+                    </div>
+            
+            </section>
+
+            <!-- ZADANIA 3-6 PODSTAWY-->
+            
+            <section class="zadanie">
 
                 <div class="codetitle">Zadania Podstawy | 3 - 6 |</div>
-    
+
                 <div class="codedesc">
                     Tworzenie zmiennych, stałej oraz sprawdzenie ich typu. Dodawanie. Dodawanie nowej zmiennej oraz
                     zapytanie o wiek. 
                 </div>
-    
-            <div class=code>
-            <code>
-    
-    <pre class="prettyprint lang-js">
-function zadanie3podstawy() { 
-const stala = "test";
-var zmienna = "test2";
-let zmienna2 = "10";
-console.log(stala, typeof stala);
-console.log(zmienna, typeof zmienna);
-console.log(zmienna2, typeof zmienna2);
-}
 
-function zadanie4podstawy() {
-const number1 = "23";
-const number2 = "34";
-console.log(number1, typeof number1);
-console.log(number2, typeof number2);
-console.log(+number1 + +number2);
-}
-
-function zadanie5podstawy() {
-let nr;
-console.log(typeof nr);
-}
-
-function zadanie6podstawy() {
-let wiek = prompt("Ile masz lat?");
-    if (wiek>=18)
-        alert("Ok, możesz wejść.");
-    else
-        alert("Masz za mało lat.");
-}
-    </pre>
-    
-            </code>
-            </div>
-            
-        </section>
+                    <div class=code>
+                        <code>
+                        <pre class="prettyprint lang-js">
+                        <script>txtZadaniaPodstawy();</script>
+                        </pre>
+                        </code>
+                    </div>
+                
+            </section>
 
         </section>
 
         <div style="clear: both;"></div>
     
         <footer>
-        
+
             <!-- STOPKA -->
             
             <div class="footer">2019 &copy; | KrzakeR | krzakerpl@gmail.com</div>
-            <div class="version"><a href="https://github.com/KrzakeR/KrzakeR.github.io/commits" class="homelink">WERSJA : jss.A01</a></div> 
-
+            <div class="version"><a href="https://github.com/KrzakeR/KrzakeR.github.io/commits" class="homelink">WERSJA : jss.B01</a></div> 
+        
         </footer>
 	
     </div>
-    
-	<!-- ODŚWIEŻANIE STRONY CO 3 SEK (TYLKO W TRAKCIE PRAC)  -->
-    
-    <!-- <meta http-equiv="refresh" content="3" > AUTOREFRESH -->
 
 </body>
 </html>

@@ -13,12 +13,11 @@
     <link rel="stylesheet" href="../../css/archive/code.css" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap&subset=latin-ext" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="cppcode.js"></script>
     	
 </head>
 
 <body>
-
-    <!-- UWAGA TEN HTML TO TOTALNY SYF! CZYTASZ NA WŁASNĄ ODPOWIEDZIALNOŚĆ :V -->
 
 	<div id="maincontainer"> <!-- >> &lt;iostream&gt; &lt;&lt; -->
         
@@ -31,7 +30,7 @@
 
         <!-- GŁÓWNA CZĘŚĆ STRONY -->
         
-        <section id="temp">
+        <section id="zadania">
 
             <!-- ZADANIE PIERWSZE -->
             
@@ -45,30 +44,13 @@
                     wprowadzonych liczb.
                 </div>
 
-            <div class=code>
-            <code>
-
-<pre class="prettyprint">
-#include &lt;iostream&gt;
-using namespace std;
-
-int wynik=0, kolejna=0;
-
-int main() 
-{
-    while (wynik&lt;=75)
-    {
-        cout &lt;&lt; "Podaj liczbe : ";
-        cin >> kolejna;
-        wynik+=kolejna;
-    }
-    cout &lt;&lt; wynik;
-    return 0;
-}
-</pre>
-
-            </code>
-            </div>
+                    <div class=code>
+                        <code>
+                        <pre class="prettyprint">
+                        <script>txtPetleCw1();</script>
+                        </pre>
+                        </code>
+                    </div>
             
             </section>
 
@@ -85,31 +67,13 @@ int main()
                     przedziału <n,m> określonego przez użytkownika.                            
                 </div>
 
-            <div class=code>
-            <code>
-
-<pre class="prettyprint">
-#include &lt;iostream&gt;
-using namespace std;
-
-int n, m;
-
-int main() 
-{
-    cout &lt;&lt; "Podaj wartosc minimalna : ";
-    cin >> n;
-    cout &lt;&lt; "Podaj wartosc maksymalna : ";
-    cin >> m;
-
-    for (n>0; n&lt;=m; n++)
-        cout &lt;&lt; n &lt;&lt; " ";
-    
-    return 0;
-}
-</pre>
-        
-            </code>
-            </div>
+                    <div class=code>
+                        <code>
+                        <pre class="prettyprint">
+                        <script>txtPetleCw2();</script>
+                        </pre>
+                        </code>
+                    </div>
                     
             </section>
 
@@ -117,38 +81,22 @@ int main()
 
             <section class="zadanie">
 
-                    <div class="codetitle">
-                        C++ - ćwiczenia z wykorzystaniem pętli | 3 |
-                    </div>
-    
-                    <div class="codedesc">
-                            Napisz program, który wyświetla kwadraty kolejnych liczb naturalnych, począwszy od
-                            zera a skończywszy na kwadracie liczby podanej przez użytkownika.                            
-                    </div>
-    
-                <div class=code>
-                <code>
-    
-<pre class="prettyprint">
-#include &lt;iostream&gt;
-using namespace std;
-
-int n, m=0;
-
-int main() 
-{
-    cout &lt;&lt; "Podaj liczbe : ";
-    cin >> n;
-        
-    for (m=0; m&lt;=n; m++)
-        cout &lt;&lt; m*m &lt;&lt; endl;
-
-    return 0;
-}
-</pre>
-            
-                </code>
+                <div class="codetitle">
+                    C++ - ćwiczenia z wykorzystaniem pętli | 3 |
                 </div>
+
+                <div class="codedesc">
+                        Napisz program, który wyświetla kwadraty kolejnych liczb naturalnych, począwszy od
+                        zera a skończywszy na kwadracie liczby podanej przez użytkownika.                            
+                </div>
+
+                    <div class=code>
+                        <code>
+                        <pre class="prettyprint">
+                        <script>txtPetleCw3();</script>
+                        </pre>
+                        </code>
+                    </div>
 
             </section>
 
@@ -156,48 +104,28 @@ int main()
 
             <section class="zadanie">
 
-                    <div class="codetitle">
-                        C++ - ćwiczenia z wykorzystaniem pętli | 4 |
-                    </div>
-    
-                    <div class="codedesc">
-                        Przygotuj schemat blokowy algorytmu wypisującego wszystkie dwucyfrowe liczby
-                        parzyste podzielne przez 3.                            
-                    </div>
-    
-                <div class=code>
-                <code>
-    
-<pre class="prettyprint">
-#include &lt;iostream&gt;
-using namespace std;
-
-int main() 
-{
-    for (int i=10; i&lt;=99; i++)
-    {
-        if (i%3==0)
-        cout &lt;&lt; i &lt;&lt; " ";
-    }
-    
-    return 0;
-}
-</pre>
-            
-                </code>
+                <div class="codetitle">
+                    C++ - ćwiczenia z wykorzystaniem pętli | 4 |
                 </div>
-                        
-                </section>
-        
-            <section class="codelinks">
-                <div class="codelink leftcodelink"><a class="codelink" href="http://ecg.vot.pl/data/uploads/cpp/cwc_petle.pdf">ZADANIA</a></div>
-                <div class="codelink rightcodelink"><a class="codelink" href="https://drive.google.com/drive/folders/1ps_77uoEsYMSFAYbn70zQRyWpPN-321n">PLIKI</a></div>
+
+                <div class="codedesc">
+                    Przygotuj schemat blokowy algorytmu wypisującego wszystkie dwucyfrowe liczby
+                    parzyste podzielne przez 3.                            
+                </div>
+
+                    <div class=code>
+                        <code>
+                        <pre class="prettyprint">
+                        <script>txtPetleCw4();</script>
+                        </pre>
+                        </code>
+                    </div>
+                    
             </section>
 
+            <!-- ZADANIE Z FUNKCJI PIERWSZE -->
 
-        <!-- ZADANIE Z FUNKCJI PIERWSZE -->
-
-        <section class="zadanie">
+            <section class="zadanie">
 
                 <div class="codetitle">
                     Funkcje – proste ćwiczenia | 1 | 
@@ -210,178 +138,63 @@ int main()
                     > Wywołuje funkcje drukuj() i awans() określoną w zmiennej lata ilość razy. <br />                           
                 </div>
 
-            <div class=code>
-            <code>
+                    <div class=code>
+                        <code>
+                        <pre class="prettyprint">
+                        <script>txtPetleCw5();</script>
+                        </pre>
+                        </code>
+                    </div>
 
-<pre class="prettyprint">
-#include &lt;iostream&gt;
-using namespace std;
+            </section>
 
-int staz=1, zarobek=1000, lata;
+            <!-- ZADANIE Z TABELI PIERWSZE -->
 
-void awans()
-{
-    zarobek*=1.1;
-    lata--;
-    staz++;
-}
+            <section class="zadanie">
 
-void drukuj()
-{
-    cout &lt;&lt; "Zarabialbys " &lt;&lt; zarobek &lt;&lt; " po " &lt;&lt; staz &lt;&lt; " latach stazu." &lt;&lt; endl;
-}
+                <div class="codetitle">
+                    Tablice – część 1 | 1 | 
+                </div>
 
-int main() 
-{
-    
-    cout &lt;&lt; "Podaj liczbe lat : ";
-    cin >> lata;
-    
-    while (lata>0)
-    {
-    drukuj();
-    awans();
-    }
+                <div class="codedesc">
+                    Napisz program, który pobiera od użytkownika dwie 5-cyfrowe serie liczb całkowitych
+                    i zapisuje je w dwóch tablicach. Następnie program powinien obliczyć sumę elementów
+                    w każdej tablicy i poinformować, która jest większa.                          
+                </div>
 
-    return 0;
-}
-</pre>
-        
-            </code>
-            </div>
+                    <div class=code>
+                        <code>
+                        <pre class="prettyprint">
+                        <script>txtTabliceCw1();</script>
+                        </pre>
+                        </code>
+                    </div>
 
-        </section>
+            </section>
 
-        <!-- ZADANIE Z TABELI PIERWSZE -->
+            <!-- ZADANIE Z FUNKCJI PIERWSZE -->
 
-        <section class="zadanie">
+            <section class="zadanie">
 
-            <div class="codetitle">
-                Tablice – część 1 | 1 | 
-            </div>
+                <div class="codetitle">
+                    Srand / Rand 
+                </div>
 
-            <div class="codedesc">
-                Napisz program, który pobiera od użytkownika dwie 5-cyfrowe serie liczb całkowitych
-                i zapisuje je w dwóch tablicach. Następnie program powinien obliczyć sumę elementów
-                w każdej tablicy i poinformować, która jest większa.                          
-            </div>
+                <div class="codedesc">
+                    Pseudolosowe liczby.                       
+                </div>
 
-        <div class=code>
-        <code>
+                    <div class=code>
+                        <code>
+                        <pre class="prettyprint">
+                        <script>txtSrand();</script>
+                        </pre>
+                        </code>
+                    </div>
 
-<pre class="prettyprint">
-#include &lt;iostream&gt;
-using namespace std;
-
-int tab[5], tab2[5], suma1, suma2, y;
-
-void oblicz()
-{
-    int i=0;
-    while(i&lt;5)
-    {
-        suma1+=tab[i];
-        i++;
-        cout &lt;&lt; suma1 &lt;&lt; endl;
-    }
-}
-
-void oblicz2()
-{
-    int i=0;
-    while(i&lt;5)
-    {
-        suma2+=tab2[i];
-        i++;
-        cout &lt;&lt; suma2 &lt;&lt; endl;
-    }
-}
-
-int main() 
-{
-    cout &lt;&lt; "Podaj piec liczb :" &lt;&lt; endl;
-    for(int x=0; x&lt;5; x++)
-    {
-    cin >> y;
-    tab[x] = y;
-    }
-    
-    cout &lt;&lt; "Podaj piec liczb :" &lt;&lt; endl;
-    for(int x=0; x&lt;5; x++)
-    {
-    cin >> y;
-    tab2[x] = y;
-    }
-
-    oblicz();
-    oblicz2();
-
-    if(suma1==suma2)
-    {
-        cout &lt;&lt; "Sumy tabel sa rowne.";
-        return 0;
-    }
-
-    if(suma1>suma2)
-    {
-        cout &lt;&lt; "Suma pierwszej tabeli jest wieksza.";
-    }
-    else
-    {
-        cout &lt;&lt; "Suma drugiej tabeli jest wieksza.";
-    }
-    
-    return 0;
-}
-</pre>
-    
-        </code>
-        </div>
-
-        </section>
-
-        <!-- ZADANIE Z FUNKCJI PIERWSZE -->
-
-        <section class="zadanie">
-
-            <div class="codetitle">
-                Srand / Rand 
-            </div>
-
-            <div class="codedesc">
-                Pseudolosowe liczby.                       
-            </div>
-
-        <div class=code>
-        <code>
-
-<pre class="prettyprint">
-#include &lt;iostream&gt;
-#include &lt;cstdlib&gt;
-#include &lt;ctime&gt;
-
-using namespace std;
-
-int main()
-{
-    srand(time(NULL));
-
-    cout &lt;&lt; "Losowa liczba : " &lt;&lt; rand() &lt;&lt; endl;
-    cout &lt;&lt; "Losowa liczba od 1 do 10 : " &lt;&lt; rand() % 10 + 1 &lt;&lt; endl;
-    cout &lt;&lt; "Losowa liczba od 1 do 1000 : " &lt;&lt; rand() % 1000 + 1 &lt;&lt; endl;
-    cout &lt;&lt; "Losowa liczba od 100 do 10000 : " &lt;&lt; rand() % 10000 + 100 &lt;&lt; endl;
-    cout &lt;&lt; "Losowa liczba od -30 do 0 : " &lt;&lt; -rand() % 30 + 0 &lt;&lt; endl;
-
-    return 0;
-}
-</pre>
-    
-        </code>
-        </div>
-
-    </section>
+            </section>
             
-    </section>
+        </section>
 
         <div style="clear: both;"></div>
     
@@ -390,15 +203,11 @@ int main()
             <!-- STOPKA -->
             
             <div class="footer">2019 &copy; | KrzakeR | krzakerpl@gmail.com</div>
-            <div class="version"><a href="https://github.com/KrzakeR/KrzakeR.github.io/commits" class="homelink">WERSJA : cpp.A01</a></div> 
+            <div class="version"><a href="https://github.com/KrzakeR/KrzakeR.github.io/commits" class="homelink">WERSJA : cpp.B01</a></div> 
 
         </footer>
 	
     </div>
-    
-	<!-- ODŚWIEŻANIE STRONY CO 3 SEK (TYLKO W TRAKCIE PRAC)  -->
-    
-    <!-- <meta http-equiv="refresh" content="3" > AUTOREFRESH -->
 
 </body>
 </html>
