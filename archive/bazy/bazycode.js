@@ -30,7 +30,7 @@ document.close();
 
 function txtCommand6(){
 document.open();
-document.write('INSERT INTO `nazwa` (`nazwakolumny`,`nazwakolumny`) VALUES (&apos;coś&apos;,&apos;coś&apos;);');
+document.write('INSERT INTO `nazwa` (`nazwakolumny`, `nazwakolumny`) VALUES (&apos;coś&apos;, &apos;coś&apos;);');
 document.close();
 }
 
