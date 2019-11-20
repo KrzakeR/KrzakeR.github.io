@@ -44,7 +44,7 @@
 	margin-bottom: calc(10px + 0.5vh);
 	background-color: #161616;
 	border-radius: 5px;
-	padding: 0.5em;
+	padding: calc(0.5em + 0.3vw);
 	border-left: 8px solid #00ccff;
 }
 
