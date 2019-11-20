@@ -1,18 +1,3 @@
-/* TEMPLATE
-{
-	background-color: ;
-	width: ; height: ;
-	padding-left: ; padding-right: ;
-	padding-top: ; padding-bottom: ;
-	margin: ;
-	float: ;
-	font-family: ;
-	font-size: ;
-	color: ;
-	text-align: ;
-}
-*/ 
-
 #logo
 {
 	margin-left: auto; margin-right: auto;
@@ -31,13 +16,15 @@
 
 .zadanie
 {
-	width: 65%;	min-width:875px;
+	border-radius: 5px;
+	width: 65%;	min-width: 875px;
 	margin: 0 auto 15px auto;
 	border: 8px solid #00ccff;
 }
 
 .codetitle
 {
+	min-width: 875px;
 	font-size: 30px;
 	text-decoration: bold;
 	text-align: center;
@@ -46,6 +33,7 @@
 
 .codedesc
 {
+	min-width: calc(875px - 1em);
 	background-color: #333;
 	text-align: justify;
 	padding: 1em 0.5em 1em 0.5em;
@@ -55,11 +43,13 @@
 {	
 	padding: 0.25em;
 	background-color: #fff;
+	margin: 0;
 	word-wrap: break-word;
 }
 
 pre
 {
+	border-radius: 5px;
 	overflow: auto;
 	font-size: 15px;
 }

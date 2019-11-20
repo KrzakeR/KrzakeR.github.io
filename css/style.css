@@ -1,19 +1,4 @@
-﻿/* TEMPLATE
-{
-	background-color: ;
-	width: ; height: ;
-	padding-left: ; padding-right: ;
-	padding-top: ; padding-bottom: ;
-	margin: ;
-	float: ;
-	font-family: ;
-	font-size: ;
-	color: ;
-	text-align: ;
-}
-*/ 
-
-body
+﻿body
 {
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;

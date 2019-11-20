@@ -6,15 +6,13 @@
 .archiveshortcut
 {
     font-weight: bold;
-    font-size: 100px;
+	font-size: 100px;
 }
 
 .archiveshortcuts
 {
     margin-left: auto; margin-right: auto;
     max-width: 700px;
-	flex-basis:500px;
-	min-height: 60vh;
 	display: flex;
 	flex-grow: 0.50;
 	flex-wrap: wrap;
@@ -25,5 +23,7 @@
 
 .shortcut
 {
+	height: 340px;
+	width: 340px;
     padding-top: 0;
 }

@@ -1,0 +1,61 @@
+#logo
+{
+	margin-left: auto; margin-right: auto;
+	padding-bottom: 0.25em;
+}
+
+#bazycontainer
+{
+	min-width: 700px;
+	margin-bottom: 80px;
+}
+
+.kartkowka
+{
+	border-radius: 10px;
+	color: #fff;
+	width: 65%;	min-width: 875px;
+	margin: 15px auto 15px auto;
+	padding: 10px 1em 10px 1em;
+	background-color: #252525;
+	margin-bottom: 43px;
+}
+
+.bazytitle
+{
+	min-width: 800px;
+	padding: 0; margin: 0 0 0.5em 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	background-color: #161616;
+	border-top: 8px solid #00ccff;
+	border-bottom: 8px solid #00ccff;
+	border-radius: 5px;
+	color: #fff;
+	text-align: center;
+}
+
+.komenda
+{
+	min-width: 800px;
+	margin: 10px;
+	background-color: #161616;
+	border-radius: 5px;
+	padding: 0.5em;
+	border-left: 8px solid #00ccff;
+}
+
+.komendatitle
+{
+	min-width: 800px;
+	padding: 0 0 0.5em 0;
+}
+
+.komendacode
+{
+	min-width: 800px;
+	border-radius: 5px;
+	background: #fff;
+	text-align: left;
+	padding: 0.25em;
+}
