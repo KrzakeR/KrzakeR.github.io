@@ -1,11 +1,11 @@
-﻿@font-face {
+@font-face {
   font-family: 'krzakergithubio';
-  src: url('../font/krzakergithubio.eot?18811663');
-  src: url('../font/krzakergithubio.eot?18811663#iefix') format('embedded-opentype'),
-       url('../font/krzakergithubio.woff2?18811663') format('woff2'),
-       url('../font/krzakergithubio.woff?18811663') format('woff'),
-       url('../font/krzakergithubio.ttf?18811663') format('truetype'),
-       url('../font/krzakergithubio.svg?18811663#krzakergithubio') format('svg');
+  src: url('../font/krzakergithubio.eot?50213956');
+  src: url('../font/krzakergithubio.eot?50213956#iefix') format('embedded-opentype'),
+       url('../font/krzakergithubio.woff2?50213956') format('woff2'),
+       url('../font/krzakergithubio.woff?50213956') format('woff'),
+       url('../font/krzakergithubio.ttf?50213956') format('truetype'),
+       url('../font/krzakergithubio.svg?50213956#krzakergithubio') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'krzakergithubio';
-    src: url('../font/krzakergithubio.svg?18811663#krzakergithubio') format('svg');
+    src: url('../font/krzakergithubio.svg?50213956#krzakergithubio') format('svg');
   }
 }
 */
@@ -25,7 +25,6 @@
   font-style: normal;
   font-weight: normal;
   speak: none;
-  font-size: calc(7em + 0.3vh);
  
   display: inline-block;
   text-decoration: inherit;
@@ -56,7 +55,8 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-github:before { content: '\f09b'; } /* '' */
-.icon-archive:before { content: '\f0f6'; } /* '' */
+.icon-archive:before { content: '\e800'; } /* '' */
+.icon-github:before { content: '\f056'; } /* '' */
+.icon-info:before { content: '\f086'; } /* '' */
+.icon-template:before { content: '\f14b'; } /* '' */
 .icon-google:before { content: '\f1a0'; } /* '' */
-.icon-template:before { content: '\f1c9'; } /* '' */

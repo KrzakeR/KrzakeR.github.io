@@ -1,108 +1,113 @@
 <!DOCTYPE HTML>
 <html lang="pl">
+
 <head>
 
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	
-	<title>Krzaczasta Dolina</title>
-	
-	<meta name="description" content="Krzaczasta strona" />
-	<meta name="keywords" content="krzaker, krzaczasta, dolina, krzaczaste, archiwium, kushakeru" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" href="css/krzakergithubio.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap&subset=latin-ext" rel="stylesheet">
-    <script src="js/timer.js"></script>
-    	
-</head>
+    <meta charset="utf-8" />
+    <title>Krzaczkowa dolina</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/animation.css" type="text/css" />
+    <link rel="stylesheet" href="css/krzakergithubio.css" type="text/css" />
+
+</head>
 
 <body>
 
-	<div id="maincontainer">
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="bg bg4"></div>
+
+    <div class="main-container size-100">
+
+        <div class="mobile-logo size-100">
         
-        <!-- LOGO -->
+            <img src="img/index/logo.png" class="mobile-logopic"/>
+        
+            Krzaczasta Dolina
+        
+        </div>
 
-        <header>
-            <div id="logo"><a href="index.html" class="homelink">Krzaczasta Dolina</a></div>
-            <div id="zegar">12:00:00</div>
-			<div style="clear: both;"></div>
-        </header> 
+        <nav class="topbar size-100">
+        
+            <div class="topbar-container">
+        
+                <a class="m-anim-ext anim-vis  topbar-button" href="archive/archive.html">
+                    Archiwum
+                    <i class="icon-archive mobile-ico ico"></i>
+                </a>
 
-        <!-- GŁÓWNA CZĘŚĆ STRONY -->
+                <a class="m-anim-ext anim-vis topbar-button" href="template/template.html">
+                    Szablony
+                    <i class="icon-template mobile-ico ico"></i>
+                </a>
 
-        <section id="middlepanel">
 
-            <!-- POJEMNIK NA SEKCJE -->
-            
-            <section class="topbox">
-                
-                <!-- INFORMACJE -->
+                <a class="m-anim-ext anim-vis topbar-button"  href="https://github.com/KrzakeR/KrzakeR.github.io">
+                    Github
+                    <i class="icon-github mobile-ico ico"></i>
+                </a>   
 
-                <article class="halfbox infobox">
-                    
-                    <div class="title info">INFORMACJE</div>
-                    
-                    <p id="infotext">Witaj na Krzaczastej Dolinie. <br /><br /> 
-                    Znajdziesz tu zbiór rzeczy, którymi się zajmuję w wolnym czasie.
-                    Aktualnie za dużo tu nie ma, ale może kiedyś coś tu będzie.
-                    Wszelkie rzeczy związane z stroną (np. kod źródłowy) znajdziesz
-                    na Githubie, klikając na skrót obok. Archiwum aktualnie zawiera
-                    JS, C++ oraz MySQL. Szablony zawierają pusty szablon HTML do skopiowania. 
-                    </p>
-                    
-                </article>
-
-                <!-- SKRÓTY -->
-
-                <section class="halfbox shortcutsbox">
-                    
-                    <div class="shortcut">
-                        <a class="shortcut" href="archive/archive.html">
-                        <i class="icon-archive"></i>
-                        <p>ARCHIWUM</p>
-                        </a>
-                    </div>
-                    
-                    <div class="shortcut">
-                        <a class="shortcut" href="https://drive.google.com/drive/folders/1fXO-sv7mnvt0AUni3PzFCt1ZqTEh75JK?usp=sharing">
-                        <i class="icon-google"></i>
-                        <p>GDRIVE</p>
-                        </a>
-                    </div>
-                    
-                    <div class="shortcut">
-                        <a class="shortcut" href="template/template.html">
-                        <i class="icon-template"></i>
-                        <p>SZABLONY</p>
-                        </a>
-                    </div>
-                    
-                    <div class="shortcut">
-                        <a class="shortcut" href="https://github.com/KrzakeR/KrzakeR.github.io">
-                        <i class="icon-github"></i>
-                        <p>GITHUB</p>
-                        </a>
-                    </div>
-                
-                </section>  <!-- KONIEC "halfbox shortcutsbox" -->    
-            </section>  <!-- KONIEC "topbox" -->   
-        </section>  <!-- KONIEC "middlepanel" -->   
-
-        <div style="clear: both;"></div>
-	
-    </div>
+                <a class="m-anim-ext anim-vis topbar-button"  href="https://drive.google.com/drive/folders/1fXO-sv7mnvt0AUni3PzFCt1ZqTEh75JK?usp=sharing">
+                    Gdrive
+                    <i class="icon-google mobile-ico ico"></i>
+                </a>
     
-        <footer>
+            </div>  
+    
+        </nav>
+
+        <a href="">
+            <div class="mobile-info">
+
+                <a href="info.html">
+
+                    Informacje
+                    <i class="icon-info mobile-ico mobile-info-ico"></i>
+
+                </a>
+
+            </div>
+        </a>
         
-            <!-- STOPKA -->
-            
-            <div class="footer">2019 &copy; | KrzakeR | krzakerpl@gmail.com</div>
-            <div class="version"><a href="https://github.com/KrzakeR/KrzakeR.github.io/commits" class="homelink">WERSJA : D05</a></div> 
+        <div class="middlebox size-100">
+
+            <img src="img/index/logo1.png" class="logo-pic anim-vis"/>
+
+            <div class="logo-text-container size-75 anim-vis">
+                <span class="logo-text-small">Witaj na</span>
+                <span class="logo-text"><b>Krzaczastej</b></span>
+                <span class="logo-text"><b>Dolinie</b></span>
+            </div>
+    
+        </div>
+
+        <footer class="size-100">
+
+            <a href="info.html">
+
+                <div class="info-button">
+
+                    Informacje
+                    <i class="icon-info info-ico"></i>
+
+                </div>
+
+            </a>
+
+            <span class="anim-vis">2020 &copy; | KrzakeR | krzakerpl@gmail.com</span>
 
         </footer>
 
-    <script>odliczanie();</script> <!-- ZEGAR -->
+        <!-- WERSJA -->
+        <p class="ver">E01</p>
+
+    </div>
 
 </body>
+
 </html>
