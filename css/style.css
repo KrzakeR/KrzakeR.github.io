@@ -344,11 +344,4 @@ a{
         justify-content: stretch;
     }
 
-    .topbar-button{
-        width: calc(25vw - 0.125rem);
-        padding: 1rem 0 1rem 0; 
-        margin: 0;
-        justify-content: center;
-    }
-
 }
