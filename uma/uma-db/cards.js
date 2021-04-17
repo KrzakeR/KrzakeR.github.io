@@ -634,5 +634,27 @@ let card_db = [
         ],
         events: event_db[54],
     },
+    {
+        name:'ユキノビジン(SSR)',
+        type:'Knowledge',
+        img:'55.jpg',
+        rarity:'SRR',
+        skills: [
+        ],
+        eventskills: [
+        ],
+        events: event_db[55],
+    },
+    {
+        name:'ニシノフラワー(SR)',
+        type:'Power',
+        img:'56.jpg',
+        rarity:'SR',
+        skills: [
+        ],
+        eventskills: [
+        ],
+        events: event_db[56],
+    },
 ]
 

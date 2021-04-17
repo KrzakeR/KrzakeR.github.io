@@ -265,7 +265,7 @@ let event_db = [
             ],
         },
         {
-            name: '牛乳ときどきリンゴ（お出かけ1）',
+            name: '牛乳ときどきリンゴ（1 Wycieczka）',
             choices: [
                 {
                     name: 'Brak wyborów',
@@ -279,7 +279,7 @@ let event_db = [
             ],
         },
         {
-            name: '驚異の逃げ脚？（お出かけ2）',
+            name: '驚異の逃げ脚？（2 Wycieczka）',
             choices: [
                 {
                     name: 'Brak wyborów',
@@ -292,7 +292,7 @@ let event_db = [
             ],
         },
         {
-            name: 'キネマの思ひ出（お出かけ3）',
+            name: 'キネマの思ひ出（3 Wycieczka）',
             choices: [
                 {
                     name: '『200億の女～キケンな専業主婦～』',
@@ -315,7 +315,7 @@ let event_db = [
             ],
         },
         {
-            name: 'ため息と絆創膏（お出かけ4）',
+            name: 'ため息と絆創膏（4 Wycieczka）',
             choices: [
                 {
                     name: 'Brak wyborów',
@@ -330,7 +330,7 @@ let event_db = [
             ],
         },
         {
-            name: 'ひと休みサプライズ（お出かけ5）',
+            name: 'ひと休みサプライズ（5 Wycieczka）',
             choices: [
                 {
                     name: 'Brak wyborów',
@@ -2015,18 +2015,12 @@ let event_db = [
             name: '目指せ、きらめく瞬間！',
             choices: [
                 {
-                    name: 'ゆるっと楽しむ',
+                    name: 'Brak wyborów',
                     reward: [
                         stats.Energy + ' -10',
                         stats.Guts + ' +2',
                         stats.Knowledge + ' +5',
                         stats.Skill.tag + '[じゃじゃウマ娘]' + stats.Skill.up,
-                    ],
-                },
-                {
-                    name: '本気で遊ぶ！',
-                    reward: [
-                        'Brak danych :O',
                     ],
                 },
             ],
@@ -2951,6 +2945,7 @@ let event_db = [
                     name: '1人でシーソーですか・・・？',
                     reward: [
                         stats.Energy + ' +35',
+                        stats.Humor.up,
                         stats.Knowledge + ' +6',
                         stats.Relation.up,
                     ],
@@ -2961,9 +2956,9 @@ let event_db = [
                         stats.Skillpoints + ' +18~57',
                         stats.Relation.up,
                         stats.Chance.tag,
+                        stats.Humor.up,
                         stats.Speed + ' +6',
                         stats.Chance.end,
-                        stats.Humor.up,
                     ],
                 },
             ],
@@ -3055,7 +3050,9 @@ let event_db = [
                 {
                     name: 'Brak wyborów',
                     reward: [
-                        'Brak danych :O',
+                        stats.Speed + ' +6',
+                        stats.Stamina + ' +6',
+                        stats.Power + ' +6',
                     ],
                 },
             ],
@@ -4719,6 +4716,187 @@ let event_db = [
                         stats.Energy + ' +10',
                         stats.Knowledge + ' +5',
                         stats.Skill.tag + '[伏兵◯]' + stats.Skill.up,
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+    ],
+    [ // 55
+        {
+            name: 'イカすライブのために',
+            choices: [
+                {
+                    name: '激しいステップを取り入れてみたら？',
+                    reward: [
+                        stats.Guts + ' +10',
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: 'アクロバティックな動きをしてみたら？',
+                    reward: [
+                        stats.Energy + ' -10',
+                        stats.Guts + ' +15',
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: 'シチースポットを目指して',
+            choices: [
+                {
+                    name: 'この地図だと、現在地と目的地は……',
+                    reward: [
+                        stats.Energy + ' -10',
+                        stats.Humor.up,
+                        stats.Guts + ' +10',
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: 'ナビのアプリを使うといいぞ',
+                    reward: [
+                        stats.Skill.tag + '[コーナー加速◯]' + stats.Skill.up,
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: '思い出ほわほわ、わんこそば',
+            choices: [
+                {
+                    name: 'たとえばどんなもの？',
+                    reward: [
+                        stats.Humor.up,
+                    ],
+                },
+                {
+                    name: 'わんこそばが食べたくなってきたな',
+                    reward: [
+                        stats.Maxenergy + ' +4',
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: '学級委員長のすンげぇ特訓',
+            choices: [
+                {
+                    name: 'ああ！学級委員長的な度胸を見習おう！',
+                    reward: [
+                        stats.Humor.up,
+                        stats.Power + ' +5',
+                    ],
+                },
+                {
+                    name: 'ああ！学級委員長的な走りを見習おう！',
+                    reward: [
+                        stats.Power + ' +3',
+                        stats.Guts + ' +3',
+                        stats.Knowledge + ' +3',
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: 'あたし、勝ちたいンです！',
+            choices: [
+                {
+                    name: 'かっこいいところを見せよう！',
+                    reward: [
+                        stats.Humor.up,
+                        stats.Skill.tag + '[ノンストップガール]' + stats.Skill.up,
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: '特訓の成果を見せてやろう！',
+                    reward: [
+                        stats.Power + ' +3',
+                        stats.Guts + ' +3',
+                        stats.Knowledge + ' +3',
+                        stats.Skill.tag + '[ノンストップガール]' + stats.Skill.up,
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+    ],
+    [ // 56
+        {
+            name: '温もり愛情弁当',
+            choices: [
+                {
+                    name: '可愛いおかずだ',
+                    reward: [
+                        stats.Trait + '愛嬌◯',
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: '栄養ありそうだ',
+                    reward: [
+                        stats.Energy + ' +20',
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: 'きれいに咲こうねっ♪',
+            choices: [
+                {
+                    name: '手分けして効率化をはかろう！',
+                    reward: [
+                        stats.Knowledge + ' +15',
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: '急いでじょうろに水を入れてくる！',
+                    reward: [
+                        stats.Speed + ' +10',
+                        stats.Power + ' +5',
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: '休んでほしくて……！',
+            choices: [
+                {
+                    name: 'Brak wyborów',
+                    reward: [
+                        stats.Humor.up,
+                        stats.Speed + ' +3',
+                        stats.Power + ' +3',
+                        stats.Knowledge + ' +3',
+                    ],
+                },
+            ],
+        },
+        {
+            name: 'ありがとうを言いたくて……！',
+            choices: [
+                {
+                    name: '花冠をあげるために頑張ったんだね',
+                    reward: [
+                        stats.Power + ' +5',
+                        stats.Skill.tag + '[直線巧者]' + stats.Skill.up,
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: '感謝の花冠っていいね',
+                    reward: [
+                        stats.Knowledge + ' +5',
+                        stats.Skill.tag + '[直線加速]' + stats.Skill.up,
                         stats.Relation.up,
                     ],
                 },
