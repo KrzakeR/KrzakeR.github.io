@@ -2297,6 +2297,28 @@ let event_db = [
             ],
         },
         {
+            name: 'ぅららん☆ふくヘーダッシュ!',
+            choices: [
+                {
+                    name: '伏兵の正しい意昧を教える',
+                    reward: [
+                        'Niepewne : ',
+                        stats.Skill.tag + '[伏兵〇]' + stats.Skill.up,
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: '休んだ方がいいと伝える',
+                    reward: [
+                        'Niepewne : ',
+                        stats.Humor.up,
+                        stats.Knowledge + ' +5',
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
             name: 'キングちゃんと頑張る！',
             choices: [
                 {

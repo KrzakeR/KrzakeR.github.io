@@ -1,11 +1,12 @@
-//GLOBALNE//
+//GLOBALNE///////////////////////////////////////////////////////////////////////////////////////
 
 let posortowane = false
 let schowane = false
 let minibrowser = false
 let focused = false
 
-////////////
+//CARDS//////////////////////////////////////////////////////////////////////////////////////////
+
 
 window.onload = function cards(){
 
@@ -20,6 +21,8 @@ window.onload = function cards(){
     sortuj();
 
 }
+
+//SELECT/////////////////////////////////////////////////////////////////////////////////////////
 
 function select(id){
     
@@ -42,6 +45,8 @@ function select(id){
         ozprzycisk.style="background-color: #111; border: 2px solid #fff;"
     }
 }
+
+//SHOW/HIDE/CARDS///////////////////////////////////////////////////////////////////////////////
 
 function chowaj(){
 
@@ -67,6 +72,8 @@ function chowaj(){
 
 }
 
+//CLEAR//////////////////////////////////////////////////////////////////////////////////////////
+
 function czysc(){
     for(let x = 0; x < card_db.length; x++){
         if(card_db[x].selected == true){
@@ -85,6 +92,8 @@ function czysc(){
         document.getElementById(focused).style.border=''
     }
 }
+
+//SORT///////////////////////////////////////////////////////////////////////////////////////////
 
 function sortuj(){
 
@@ -117,6 +126,8 @@ function sortuj(){
 
 }
 
+//BROWSER/////////////////////////////////////////////////////////////////////////////////////////
+
 let oldid = false
 
 function browser(id){
@@ -144,8 +155,10 @@ function browser(id){
     oldid = id
     
     let event = card_db[id].events
+
+    content = '<div id="browsertabs"><div class="tabbutton" onclick="browsertabs(&#39;events&#39;)">Eventy</div><div class="tabbutton" onclick="browsertabs(&#39;bonus&#39;);">Bonusy</div><div class="tabbutton" onclick="browsertabs(&#39;skills&#39;);">Skille</div></div>'
     
-    let content = '<div class="eventcontainer">'
+    content += '<div id="eventcontainer">'
     for(let x = 0; x < event.length; x++){
         content += '<div class="eventdiv"><div class="teventname ' + card_db[id].type + '" colspan="2">' + event[x].name + '</div>'
         for(let y = 0; y < event[x].choices.length; y++){
@@ -157,26 +170,45 @@ function browser(id){
         }
         content += '</div>'
     }
-    content += '</div><br />'
-
-    /*
-    content += '<table>'
-
-    for(let x = 0; x < card_db[id].skills.length; x++){
-        let skill = card_db[id].skills[x]
-        content += '<tr><td class="ticon"><img src="uma-db/img/skillicons/' + skill.icon + '"/></td><td class="tname">' + skill.name + '</td><td class="tdesc">' + skill.desc + '</td><td class="ttag">' + skill.type + '</td></div></tr>'
+    content += '</div>'
+    
+    content += '<div id="skillcontainer">'
+    content += '<div class="teventname Knowledge">Preference</div>'
+    for(let x = 0; x < skill_db.pref.length; x++){
+        content += '<div class="skillrow"><div class="skilliconcontainer"><img src="uma-db/img/skillicons/' + skill_db.pref[x].icon + '" class="skillicon"/></div><div class="skillcontent"><div class="skillnamerow ' + skill_db.pref[x].color + '"><div class="skillname">' + skill_db.pref[x].name + '"</div>・<div class="skillname">' + skill_db.pref[x].engname + '</div></div><div class="skillinforow"><div class="skilldesc">' + skill_db.pref[x].desc + '</div><div class="skilltag">'
+        for(let y = 0; y < skill_db.pref[x].tags.length; y++){
+            content += skill_db.pref[x].tags[y]
+        }
+        content += '</div></div></div></div>'
     }
-
-    for(let x = 0; x < card_db[id].eventskills.length; x++){
-        let skill = card_db[id].eventskills[x]
-        content += '<tr><td class="ticon"><img src="uma-db/img/skillicons/' + skill.icon + '"/></td><td class="tname">' + skill.name + '</td><td class="tdesc">' + skill.desc + '</td><td class="ttag">' + skill.type + '</td></div></tr>'
-    }
-
-    content +='</table>'
-    */
+    content += '</div>'
+    
     document.getElementById('minibrowser').innerHTML = content
 
+    browsertabs('events');
+
 }
+
+function browsertabs(type){
+
+    let tabs = document.getElementById('browsertabs')
+    let eventy = document.getElementById('eventcontainer')
+    let skills = document.getElementById('skillcontainer')
+    let id = focused.substr(4, 10);
+
+    if(type=='events'){
+        tabs.innerHTML = '<div class="tabbutton-active ' + card_db[id].type + '" onclick="browsertabs(\'events\')">Eventy</div><div class="tabbutton" onclick="browsertabs(&#39;skills&#39;);">Skille</div>'
+        eventy.style='display: block;'
+        skills.style='display: none;'
+    }else if(type=='skills'){
+        tabs.innerHTML = '<div class="tabbutton" onclick="browsertabs(&#39;events&#39;)">Eventy</div><div class="tabbutton-active ' + card_db[id].type + '" onclick="browsertabs(&#39;skills&#39;);">Skille</div>'
+        eventy.style='display: none;'
+        skills.style='display: block;'
+    }
+
+}
+
+//HIDE/BROWSER///////////////////////////////////////////////////////////////////////////////////////
 
 function schowajbrowser(){
 

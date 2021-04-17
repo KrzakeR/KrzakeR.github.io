@@ -5,16 +5,10 @@ let card_db = [
         img:'0.jpg',
         rarity:'SSR',
         skills: [
-            skill_db.speed[0],
-            skill_db.acceleration[0],
+
         ],
         eventskills: [
-            skill_db.position[0],
-            skill_db.acceleration[1],
-            skill_db.position[1],
-            skill_db.position[2],
-            skill_db.recovery[0],
-            skill_db.acceleration[2],
+
         ],
         events: event_db[0],
     },
@@ -24,15 +18,10 @@ let card_db = [
         img:'1.jpg',
         rarity:'SSR',
         skills: [
-            skill_db.recovery[1],
-            skill_db.recovery[2],
+
         ],
         eventskills: [
-            skill_db.preference[0],
-            skill_db.recovery[3],
-            skill_db.speed[1],
-            skill_db.speed[2],
-            skill_db.debuff[0],
+
         ],
         events: event_db[1],
     },
@@ -44,10 +33,7 @@ let card_db = [
         skills: [
         ],
         eventskills: [
-            skill_db.recovery[4],
-            skill_db.speed[3],
-            skill_db.start[0],
-            skill_db.start[1],
+
         ],
         events: event_db[2],
     },
@@ -57,19 +43,10 @@ let card_db = [
         img:'3.jpg',
         rarity:'SSR',
         skills: [
-            skill_db.acceleration[1],
-            skill_db.recovery[5],
+
         ],
         eventskills: [
-            skill_db.preference[1],
-            skill_db.speed[4],
-            skill_db.acceleration[3],
-            skill_db.recovery[6],
-            skill_db.speed[2],
-            skill_db.acceleration[4],
-            skill_db.acceleration[5],
-            skill_db.speed[5],
-            skill_db.speed[6],
+
         ],
         events: event_db[3],
     },
