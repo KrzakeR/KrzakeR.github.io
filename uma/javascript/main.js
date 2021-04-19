@@ -173,14 +173,23 @@ function browser(id){
     content += '</div>'
     
     content += '<div id="skillcontainer">'
-    content += '<div class="teventname Knowledge">Preference</div>'
-    for(let x = 0; x < skill_db.pref.length; x++){
-        content += '<div class="skillrow"><div class="skilliconcontainer"><img src="uma-db/img/skillicons/' + skill_db.pref[x].icon + '" class="skillicon"/></div><div class="skillcontent"><div class="skillnamerow ' + skill_db.pref[x].color + '"><div class="skillname">' + skill_db.pref[x].name + '"</div>・<div class="skillname">' + skill_db.pref[x].engname + '</div></div><div class="skillinforow"><div class="skilldesc">' + skill_db.pref[x].desc + '</div><div class="skilltag">'
-        for(let y = 0; y < skill_db.pref[x].tags.length; y++){
-            content += skill_db.pref[x].tags[y]
+
+    function skillcategory(category){
+        for(let x = 0; x < category.length; x++){
+            content += '<div class="skillrow"><div class="skilliconcontainer"><img src="uma-db/img/skillicons/' + category[x].icon + '" class="skillicon"/></div><div class="skillcontent"><div class="skillnamerow ' + category[x].color + '"><div class="skillname">' + category[x].name + '"</div>・<div class="skillname">' + category[x].engname + '</div></div><div class="skillinforow"><div class="skilldesc">' + category[x].desc + '</div><div class="skilltag">'
+            for(let y = 0; y < category[x].tags.length; y++){
+                content += category[x].tags[y]
+            }
+            content += '</div></div></div></div>'
         }
-        content += '</div></div></div></div>'
     }
+    
+    content += '<div class="teventname Knowledge">Preference</div>'
+    skillcategory(skill_db.pref);
+
+    content += '<div class="teventname Speed">Recovery</div>'
+    skillcategory(skill_db.recovery);
+
     content += '</div>'
     
     document.getElementById('minibrowser').innerHTML = content

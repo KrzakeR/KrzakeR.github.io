@@ -407,4 +407,416 @@ let skill_db = {
             color: 'Knowledge',
         },
     ],
+    recovery:[
+        { // rec0
+            name:'コーナー回復○',
+            engname:'Corner Recovery',
+            desc:'Slightly recover stamina through efficient cornering',
+            tags: [
+                tags.Everyone,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec1
+            name:'直線回復',
+            engname:'Straight Recovery',
+            desc:'Slightly recover stamina on straights',
+            tags: [
+                tags.Everyone,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec2
+            name:'隠れ蓑',
+            engname:'Undercover',
+            desc:'Remain composed and slightly recover stamina in Opening Leg if front-side is crowded',
+            tags: [
+                tags.Everyone,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec3
+            name:'ペースキープ',
+            engname:'Keep the Pace',
+            desc:'Slightly recover stamina when passed in the Middle Leg',
+            tags: [
+                tags.Everyone,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec4
+            name:'ウマ込み冷静',
+            engname:'Crowded Calm',
+            desc:'Slightly recover stamina when boxed in during the Middle Leg',
+            tags: [
+                tags.Everyone,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec5
+            name:'スタミナキープ',
+            engname:'Stamina Keep',
+            desc:'Slightly harder to tire out during the Opening Leg',
+            tags: [
+                tags.Leader,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec6
+            name:'好位追走',
+            engname:'Favorite Place',
+            desc:'Become slightly harder to tire during the Middle Leg',
+            tags: [
+                tags.Leader,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec7
+            name:'後方待機',
+            engname:'On Standby',
+            desc:'Become slightly harder to tire out during the Middle Leg',
+            tags: [
+                tags.Chaser,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec8
+            name:'様子見',
+            engname:'Wait and See',
+            desc:'Slightly harder to tire when in the back during the Middle Leg',
+            tags: [
+                tags.Short,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec9
+            name:'展開窺い',
+            engname:'Progress Peek',
+            desc:'Become slightly harder to tire when in the back of the pack during the Opening Leg',
+            tags: [
+                tags.Miles,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec10
+            name:'前途洋々',
+            engname:'Bright Future',
+            desc:'Become slightly harder to tire out when in the lead during the Middle Leg',
+            tags: [
+                tags.Medium,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec11
+            name:'前途洋々',
+            engname:'Bright Future',
+            desc:'Become slightly harder to tire out when in the lead during the Middle Leg',
+            tags: [
+                tags.Medium,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec12
+            name:'深呼吸',
+            engname:'Deep Breaths',
+            desc:'Take a breath when entering straights and become slightly harder to tire out',
+            tags: [
+                tags.Long,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec13
+            name:'別腹タンク',
+            engname:'Backup Belly',
+            desc:'Slightly recovers running willpower after exhausting your strength',
+            tags: [
+                tags.Long,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec14
+            name:'軽やかステップ',
+            engname:'Light Step',
+            desc:'Become slightly harder to tire out from left-right movements',
+            tags: [
+                tags.Medium,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec15
+            name:'パス上手',
+            engname:'Pass Expert',
+            desc:'Become slightly harder to tire when passing',
+            tags: [
+                tags.Long,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec16
+            name:'勢い任せ',
+            engname:'Leave it to vigour!',
+            desc:'Become slightly harder to tire out on uphills',
+            tags: [
+                tags.Escape,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec17
+            name:'栄養補給',
+            engname:'Nutritional Supplements',
+            desc:'Slightly recover stamina in Middle Leg',
+            tags: [
+                tags.Leader,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec18
+            name:'小休憩',
+            engname:'A Little Break',
+            desc:'Slightly recover stamina during the Opening Leg',
+            tags: [
+                tags.Betweener,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec19
+            name:'下校の楽しみ',
+            engname:'Winding Down',
+            desc:'Become slightly harder to tire out on downhills',
+            tags: [
+                tags.Chaser,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec20
+            name:'冷静',
+            engname:'Serene',
+            desc:'When front is crowded, slightly calm down remain composed',
+            tags: [
+                tags.Chaser,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec21
+            name:'スリーセブン',
+            engname:'Triple 7s',
+            desc:'Slightly improve mood when the remaining distance is 777m',
+            tags: [
+                tags.Everyone,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec22
+            name:'ふり絞り',
+            engname:'Shake It Out',
+            desc:'Slightly recover stamina if many skills activate during the Final Leg',
+            tags: [
+                tags.Everyone,
+            ],
+            icon: 'recoveryicon.png',
+            color: 'Speed',
+        },
+        { // rec23
+            name:'円弧のマエストロ',
+            engname:'Arc Maestro',
+            desc:'Recover stamina through efficient cornering',
+            tags: [
+                tags.Everyone,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec24
+            name:'好転一息',
+            engname:'Breath of Fresh Air',
+            desc:'Recover stamina on straights',
+            tags: [
+                tags.Everyone,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec25
+            name:'鋼の意志',
+            engname:'Will of Steel',
+            desc:'Remain composed and recover stamina in Opening Leg if front-side is crowded',
+            tags: [
+                tags.Everyone,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec26
+            name:'不屈の心',
+            engname:'Indomitable Heart',
+            desc:'Recover stamina when passed in the Middle Leg',
+            tags: [
+                tags.Everyone,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec27
+            name:'どこ吹く風',
+            engname:'Where the Wind Blows',
+            desc:'Recover stamina when boxed in during the Middle Leg',
+            tags: [
+                tags.Everyone,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec28
+            name:'余裕綽々',
+            engname:'Calm and Composed',
+            desc:'Harder to tire out during the Opening Leg',
+            tags: [
+                tags.Leader,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec29
+            name:'レースプランナー',
+            engname:'Race Planner',
+            desc:'Harder to tire during the Middle Leg',
+            tags: [
+                tags.Leader,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec30
+            name:'眠れる獅子',
+            engname:'Sleeping Lion',
+            desc:'Become harder to tire out during the Middle Leg',
+            tags: [
+                tags.Chaser,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec31
+            name:'慧眼',
+            engname:'Wisdom Eye',
+            desc:'Become harder to tire when in the back of the pack during the Opening Le',
+            tags: [
+                tags.Miles,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec32
+            name:'切り開く者',
+            engname:'The One Who Clears The Path',
+            desc:'Become harder to tire out when in the lead during the Middle Leg',
+            tags: [
+                tags.Medium,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec33
+            name:'クールダウン',
+            engname:'Cooldown',
+            desc:'Take a breath when entering straights and become harder to tire out',
+            tags: [
+                tags.Long,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec33
+            name:'火事場のバ鹿力',
+            engname:'Fight or Flight',
+            desc:'Recover the will to run after exhausting your strength',
+            tags: [
+                tags.Long,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec33
+            name:'神業ステップ',
+            engname:'Miracle Step',
+            desc:'Become harder to tire out from left-right movements',
+            tags: [
+                tags.Medium,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec33
+            name:'じゃじゃウマ娘',
+            engname:'Wild Girl',
+            desc:'Become harder to tire out on uphills',
+            tags: [
+                tags.Escape,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec33
+            name:'食いしん坊',
+            engname:'Big Eater',
+            desc:'Recover stamina in Middle Leg',
+            tags: [
+                tags.Leader,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec33
+            name:'リラックス',
+            engname:'Relax',
+            desc:'Recover stamina in Opening Leg',
+            tags: [
+                tags.Betweener,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec33
+            name:'下校後のスペシャリスト',
+            engname:'After School Specialist',
+            desc:'Become harder to tire out on downhills',
+            tags: [
+                tags.Chaser,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+        { // rec33
+            name:'冷静沈着',
+            engname:'Calm and Collected',
+            desc:'When front is crowded, calm down and remain composed',
+            tags: [
+                tags.Chaser,
+            ],
+            icon: 'recoveryiconrare.png',
+            color: 'Speed',
+        },
+    ]
 }

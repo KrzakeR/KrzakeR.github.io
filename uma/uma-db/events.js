@@ -2358,7 +2358,7 @@ let event_db = [
                     name: '食べた分だけ走れば問題ない',
                     reward: [
                         stats.Maxenergy + ' +4',
-                        stats.Stamina + ' +',
+                        stats.Stamina + ' +5',
                         stats.Relation.up,
                     ],
                 },
@@ -3283,7 +3283,7 @@ let event_db = [
                     ],
                 },
                 {
-                    name: '夜だと、音が少し響くかもな',
+                    name: '夜だと、音が少し響くかもな……',
                     reward: [
                         stats.Energy + ' +10',
                         stats.Knowledge + ' +5',
