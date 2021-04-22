@@ -176,7 +176,7 @@ function browser(id){
 
     function skillcategory(category){
         for(let x = 0; x < category.length; x++){
-            content += '<div class="skillrow"><div class="skilliconcontainer"><img src="uma-db/img/skillicons/' + category[x].icon + '" class="skillicon"/></div><div class="skillcontent"><div class="skillnamerow ' + category[x].color + '"><div class="skillname">' + category[x].name + '"</div>・<div class="skillname">' + category[x].engname + '</div></div><div class="skillinforow"><div class="skilldesc">' + category[x].desc + '</div><div class="skilltag">'
+            content += '<div class="skillrow"><div class="skilliconcontainer"><img src="uma-db/img/skillicons/' + category[x].icon + '" class="skillicon"/></div><div class="skillcontent"><div class="skillnamerow ' + category[x].color + '"><div class="skillname">' + category[x].name + '</div><div class="skillname">' + category[x].engname + '</div></div><div class="skillinforow"><div class="skilldesc">' + category[x].desc + '</div><div class="skilltag">'
             for(let y = 0; y < category[x].tags.length; y++){
                 content += category[x].tags[y]
             }
@@ -184,11 +184,14 @@ function browser(id){
         }
     }
     
-    content += '<div class="teventname Knowledge">Preference</div>'
+    content += '<div class="tskillname spref">Preference</div>'
     skillcategory(skill_db.pref);
 
-    content += '<div class="teventname Speed">Recovery</div>'
+    content += '<div class="tskillname srecovery">Recovery</div>'
     skillcategory(skill_db.recovery);
+
+    content += '<div class="tskillname sspeed">Speed</div>'
+    skillcategory(skill_db.speed);
 
     content += '</div>'
     
@@ -230,7 +233,7 @@ function schowajbrowser(){
     }
     document.getElementById('minibrowser').innerHTML=''
     document.getElementById('minibrowser').style='display: none;'
-    document.getElementById('cards').style='min-width: 210px; width: auto;'
+    document.getElementById('cards').style='min-width: 210px; width: 100%;'
     minibrowser = false
 
 }

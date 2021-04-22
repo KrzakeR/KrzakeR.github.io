@@ -15,7 +15,7 @@ nav{
 }
 
 .container{
-    min-width: 730px;
+    min-width: 800px;
     display: flex;
     justify-content: space-evenly;
     width: calc(100vw - 2rem);
@@ -34,11 +34,11 @@ nav{
     float: left;
     min-width: 210px;
     width: 100%;
-    padding-bottom: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    height: 88vh;
+    height: calc(88vh + 50px);
     border: 0.5rem #222 solid;
     border-radius: 0.5rem;
     overflow-x: hidden;
@@ -344,41 +344,6 @@ tr{
     border-radius: 0.5rem;
 }
 
-@keyframes random {
-    5% {    
-        background-color: #2444e2;
-        border-color: #2444e2;
-        color: #fff;
-    }
-    25% {
-        background-color: #e03854;
-        border-color: #e03854;
-        color: #fff;
-    }
-    50% {
-        background-color: #ffbb00;
-        border-color: #ffbb00;
-        color: #000;
-    }
-    75% {
-        background-color: #df2bb8;
-        border-color: #df2bb8;
-        color: #fff;
-    }
-    100% {
-        background-color: #009625; 
-        border-color: #009625;
-        color: #fff;
-    }
-}
-
-.trandom{
-    background-color: #2444e2;
-    border-color: #2444e2;
-    color: #fff;
-    animation: random infinite 6s alternate backwards;
-}
-
 .teventname{
     padding: 0.5rem 0;
     font-size: 1.2rem;
@@ -411,12 +376,26 @@ tr{
     align-items: center;
 }
 
+.tskillname{
+    width: 100%;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
 .skillnamerow{
     display: flex;
     width: 100%;
     height:25%;
     justify-content: space-evenly;
     align-items: center;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0;
+    text-align: center;
+    margin-bottom: 0.3rem;
+    border-radius: 0.5rem;
 }
 
 .skillinforow{
@@ -455,4 +434,19 @@ tr{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.spref{
+    background-color: rgb(122, 202, 57);
+    border-color: rgb(122, 202, 57);
+}
+
+.srecovery{
+    background-color: rgb(24,166,246);
+    border-color: rgb(24,166,246);
+}
+
+.sspeed{
+    background-color: rgb(224, 100, 17);
+    border-color: rgb(224, 100, 17);
 }

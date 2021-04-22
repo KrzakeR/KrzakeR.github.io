@@ -159,8 +159,9 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     bottom: 0;
-    width: 100%;
+    width: calc(100% - 1rem);
     height: 2.5rem;
+    font-size: 0.8rem;
     background-color: #222;
     border-top: 0.1rem solid #999;
     padding: 0.5rem;
@@ -308,12 +309,12 @@ a{
     }
 
     footer{
-        display: flex; 
+        display: flex;
+        flex-direction: column; 
         padding: 0.5rem;
         text-align: center;
-        height: 3vh;
+        height: 7.5vh;
         border: none;
-        font-size: calc(0.2rem + 3.5vw);
         background-color: #222;
         border-top: 0.1rem solid #999;
     }

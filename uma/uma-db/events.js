@@ -2302,7 +2302,6 @@ let event_db = [
                 {
                     name: '伏兵の正しい意昧を教える',
                     reward: [
-                        'Niepewne : ',
                         stats.Skill.tag + '[伏兵〇]' + stats.Skill.up,
                         stats.Relation.up,
                     ],
@@ -2310,10 +2309,11 @@ let event_db = [
                 {
                     name: '休んだ方がいいと伝える',
                     reward: [
-                        'Niepewne : ',
                         stats.Humor.up,
-                        stats.Knowledge + ' +5',
                         stats.Relation.up,
+                        stats.Chance.tag,
+                        stats.Knowledge + ' +5',
+                        stats.Chance.end,
                     ],
                 },
             ],
@@ -3195,7 +3195,7 @@ let event_db = [
             name: '夜の独走',
             choices: [
                 {
-                    name: 'いつもこんなに走り込んでいるのか？',
+                    name: '……いつもこんなに走り込んでいるのか？',
                     reward: [
                         stats.Stamina + ' +10',
                         stats.Relation.up,
@@ -3283,7 +3283,7 @@ let event_db = [
                     ],
                 },
                 {
-                    name: '夜だと、音が少し響くかもな……',
+                    name: '夜だと、音が少し響くかもな',
                     reward: [
                         stats.Energy + ' +10',
                         stats.Knowledge + ' +5',
