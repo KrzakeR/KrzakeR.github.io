@@ -2138,7 +2138,7 @@ let event_db = [
                 {
                     name: 'もうすぐ始業時間なんじゃ……',
                     reward: [
-                        stats.Humor.up,
+                        stats.Humor.down,
                         stats.Skillpoints + ' +45',
                         stats.Relation.up,
                     ],
@@ -3586,16 +3586,17 @@ let event_db = [
             name: 'ミスディレクション',
             choices: [
                 {
-                    name: 'Brak wyborów',
+                    name: '最終コーナーのコツ',
                     reward: [
                         stats.Skill.tag + '[抜け出し準備]' + stats.Skill.up,
                         stats.Relation.up,
                     ],
                 },
                 {
-                    name: 'Brak wyborów',
+                    name: '走りのテクニック',
                     reward: [
                         stats.Skillpoints + ' +30',
+                        stats.Relation.up,
                     ],
                 },
             ],
@@ -4920,6 +4921,253 @@ let event_db = [
                         stats.Knowledge + ' +5',
                         stats.Skill.tag + '[直線加速]' + stats.Skill.up,
                         stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+    ],
+    [
+        {
+            name: '剛毅朴訥、仁に近し',
+            choices: [
+                {
+                    name: '拳のスピードアップに集中するのは？',
+                    reward: [
+                        stats.Speed + ' +10',
+                    ],
+                },
+                {
+                    name: '拳のパワーアップに集中するのは？',
+                    reward: [
+                        stats.Humor.up,
+                        stats.Power + ' +5',
+                    ],
+                },
+            ],
+        },
+        {
+            name: '嗚呼、守りたい……！',
+            choices: [
+                {
+                    name: '厳しい修行中みたいな顔をしてた',
+                    reward: [
+                        stats.Stamina + ' +10',
+                        stats.Power + ' +10',
+                    ],
+                },
+                {
+                    name: '面白い一面もあるんだな',
+                    reward: [
+                        stats.Skill.tag + '[中距離コーナー◯]' + stats.Skill.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: '電脳奥義炸裂！ヤエノ出稽古修行',
+            choices: [
+                {
+                    name: 'Brak wyborów',
+                    reward: [
+                        stats.Speed + ' +5',
+                        stats.Power + ' +5',
+                        stats.Skillpoints + ' +10',
+                    ],
+                },
+            ],
+        },
+        {
+            name: '理の食VS暴の食',
+            choices: [
+                {
+                    name: '存分に食らい尽くせいッ！',
+                    reward: [
+                        stats.Energy + ' +10',
+                        stats.Skillpoints + ' +10',
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: 'それぞれに合った量の方が……',
+                    reward: [
+                        stats.Energy + ' +10',
+                        stats.Knowledge + ' +10',
+                        stats.Skillpoints + ' +10',
+                        stats.Skill.tag + '[遊びはおしまいっ！]' + stats.Skill.up,
+                        stats.Event.fail,
+                    ],
+                },
+            ],
+        },
+        {
+            name: 'ヤエノムテキ恋歌地獄変',
+            choices: [
+                {
+                    name: 'Brak wyborów',
+                    reward: [
+                        stats.Energy + ' -10',
+                        stats.Speed + ' +5',
+                        stats.Stamina + ' +0~5',
+                        stats.Power + ' +0~10',
+                        stats.Skill.tag + '[アガッてきた！]' + stats.Skill.up,
+                    ],
+                },
+            ],
+        },
+    ],
+    [
+        {
+            name: '全・力・競・走！！',
+            choices: [
+                {
+                    name: '手すりショートカットだ！',
+                    reward: [
+                        stats.Skill.tag + '[差しコーナー◯]' + stats.Skill.up,
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: '相手の動きを予想してみるとか',
+                    reward: [
+                        stats.Skillpoints + ' +30',
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: '全・力・筋・肉！！',
+            choices: [
+                {
+                    name: 'わかる！とことんやりたい',
+                    reward: [
+                        stats.Stamina + ' +5',
+                        stats.Skillpoints + ' +15',
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: 'スポーツドリンクを渡す',
+                    reward: [
+                        stats.Humor.up,
+                        stats.Skillpoints + ' +15',
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: '密着！情熱ダービー特集ッ',
+            choices: [
+                {
+                    name: 'Brak wyborów',
+                    reward: [
+                        stats.Stamina + ' +5',
+                        stats.Power + ' +5',
+                    ],
+                },
+            ],
+        },
+        {
+            name: '特訓！ライバルだからッ',
+            choices: [
+                {
+                    name: 'Brak wyborów',
+                    reward: [
+                        stats.Energy + ' -10',
+                        stats.Stamina + ' +5',
+                        stats.Power + ' +5',
+                    ],
+                },
+            ],
+        },
+        {
+            name: '挑戦！夢は叶えるものッ',
+            choices: [
+                {
+                    name: 'Brak wyborów',
+                    reward: [
+                        stats.Energy + ' -30',
+                        stats.Stamina + ' +5',
+                        stats.Power + ' +5',
+                        stats.Skill.tag + '[全身全霊]' + stats.Skill.up,
+                    ],
+                },
+            ],
+        },
+    ],
+    [
+        {
+            name: '読書家あるある',
+            choices: [
+                {
+                    name: 'ラストのカーチェイスが凄かった',
+                    reward: [
+                        stats.Speed + ' +5',
+                        stats.Knowledge + ' +5',
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: '映像が綺麗だった',
+                    reward: [
+                        stats.Energy + ' +10',
+                        stats.Power + ' +5',
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: '託された物語',
+            choices: [
+                {
+                    name: '図書委員に確認するのがいいかもね',
+                    reward: [
+                        stats.Stamina + ' -10',
+                        stats.Knowledge + ' +5',
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: 'その本、どんなストーリー？',
+                    reward: [
+                        stats.Skill.tag + '[中距離直線◯]' + stats.Skill.up,
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: '読書少女と魔法少女？',
+            choices: [
+                {
+                    name: '読書で知識を深めよう',
+                    reward: [
+                        stats.Stamina + ' +5',
+                        stats.Knowledge + ' +5',
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: 'まずは筋力アップから！',
+                    reward: [
+                        stats.Energy + ' +20',
+                        stats.Power + ' +10',
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: 'いつか、『物語』の主役に',
+            choices: [
+                {
+                    name: 'Brak wyborów',
+                    reward: [
+                        stats.Stamina + ' +10',
+                        stats.Knowledge + ' +10',
+                        stats.Skill.tag + '[鋭い眼光]' + stats.Skill.up,
                     ],
                 },
             ],

@@ -633,5 +633,38 @@ let card_db = [
         ],
         events: event_db[56],
     },
+    {
+        name:'ヤエノムテキ(SSR)',
+        type:'Power',
+        img:'57.jpg',
+        rarity:'SRR',
+        skills: [
+        ],
+        eventskills: [
+        ],
+        events: event_db[57],
+    },
+    {
+        name:'ウイニングチケット(SSR)',
+        type:'Power',
+        img:'58.jpg',
+        rarity:'SRR',
+        skills: [
+        ],
+        eventskills: [
+        ],
+        events: event_db[58],
+    },
+    {
+        name:'ゼンノロブロイ(SR)',
+        type:'Stamina',
+        img:'59.jpg',
+        rarity:'SR',
+        skills: [
+        ],
+        eventskills: [
+        ],
+        events: event_db[59],
+    },
 ]
 
