@@ -666,5 +666,26 @@ let card_db = [
         ],
         events: event_db[59],
     },
+    {
+        name:'サクラチヨノオー(SRR)',
+        type:'Stamina',
+        img:'60.jpg',
+        rarity:'SRR',
+        skills: [
+        ],
+        eventskills: [
+        ],
+        events: event_db[60],
+    },{
+        name:'シーキングザパール(SR)',
+        type:'Guts',
+        img:'61.jpg',
+        rarity:'SR',
+        skills: [
+        ],
+        eventskills: [
+        ],
+        events: event_db[61],
+    },
 ]
 

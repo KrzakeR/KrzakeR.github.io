@@ -5173,6 +5173,199 @@ let event_db = [
             ],
         },
     ],
+    [
+        {
+            name: '今日の格言！',
+            choices: [
+                {
+                    name: '1種類を徹底的にやるとか？',
+                    reward: [
+                        stats.Energy + ' -10',
+                        stats.Power + ' +20',
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: 'いろいろ試してみるとか？',
+                    reward: [
+                        stats.Energy + ' +5',
+                        stats.Skillpoints + ' +10',
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: 'いつか咲く、その日まで……',
+            choices: [
+                {
+                    name: '自分らしさも大事かと',
+                    reward: [
+                        stats.Energy + ' +5',
+                        stats.Stamina + ' +5',
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: 'きっとなれる！',
+                    reward: [
+                        stats.Skill.tag + '[春ウマ娘◯]' + stats.Skill.up,
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: '花咲く、一歩！',
+            choices: [
+                {
+                    name: 'Brak wyborów',
+                    reward: [
+                        stats.Skillpoints + ' +15',
+                    ],
+                },
+            ],
+        },
+        {
+            name: '花咲く、希望！',
+            choices: [
+                {
+                    name: 'どうせなら思いっきり楽しもう！',
+                    reward: [
+                        stats.Stamina + ' +15',
+                        stats.Relation.up,
+                        stats.Heal,
+                        'lub',
+                        '<br />',
+                        stats.Energy + ' -10',
+                        stats.Guts + ' +15',
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: 'のんびりやるといいよ',
+                    reward: [
+                        stats.Energy + ' +10',
+                        stats.Humor.up,
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: '花咲く、いつか！',
+            choices: [
+                {
+                    name: '結果はすぐには出ない',
+                    reward: [
+                        stats.Stamina + ' +20',
+                        stats.Skillpoints + ' +10',
+                        stats.Skill.tag + '[スピードスター]' + stats.Skill.up,
+                        stats.Relation.up,
+                        'lub',
+                        '<br />',
+                        stats.Energy + ' -15',
+                        stats.Stamina + ' +10',
+                        stats.Skillpoints + ' +5',
+                        stats.Skill.tag + '[抜け出し準備]' + stats.Skill.up,
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: 'もう克服は諦める？',
+                    reward: [
+                        stats.Speed + ' +5',
+                        stats.Stamina + ' +10',
+                        stats.Power + ' +5',
+                        stats.Skillpoints + ' +30',
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+    ],
+    [
+        {
+            name: '全力でパッション！',
+            choices: [
+                {
+                    name: 'そう言われても……',
+                    reward: [
+                        stats.Energy + ' +10',
+                        stats.Humor.up,
+                    ],
+                },
+                {
+                    name: 'なら存分に楽しませてもらうよ',
+                    reward: [
+                        stats.Power + ' +5',
+                        stats.Guts + ' +5',
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: '全力でシンキング！',
+            choices: [
+                {
+                    name: '実現は難しそうだけど……',
+                    reward: [
+                        stats.Knowledge + ' +20',
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: '面白い案が出てきたな！',
+                    reward: [
+                        stats.Energy + ' -10',
+                        stats.Skill.tag + '[ウマ好み]' + stats.Skill.up,
+                        stats.Relation.up,
+                    ],
+                },
+            ],
+        },
+        {
+            name: '言葉はノンノン♪　ボディで語るの！',
+            choices: [
+                {
+                    name: '高らかに歌う',
+                    reward: [
+                        stats.Humor.up,
+                        stats.Skill.tag + '[ラッキーセブン]' + stats.Skill.up,
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: 'ストレスを発散しながら踊る',
+                    reward: [
+                        stats.Power + ' +10',
+                        stats.Guts + ' +10',
+                        stats.Relation.up,
+                    ],
+                },
+                {
+                    name: '満足げなポーズを取る',
+                    reward: [
+                        stats.Energy + ' +30',
+                    ],
+                },
+            ],
+        },
+        {
+            name: '諦めないで！　可能性は無限大！',
+            choices: [
+                {
+                    name: 'Brak wyborów',
+                    reward: [
+                        stats.Power + ' +5',
+                        stats.Guts + ' +5',
+                        stats.Skill.tag + '[ギアシフト]' + stats.Skill.up,
+                    ],
+                },
+            ],
+        },
+    ],
 ]
 
 event_db[1337] = placeholder[0]
